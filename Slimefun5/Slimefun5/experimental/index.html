@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Repo Server</title>
+    <link id="favicon" rel="shortcut icon" type="image/png" href="https://Slimefun5.github.io/builds/resources/favicon.png">
+    <link rel="stylesheet" href="https://Slimefun5.github.io/builds/resources/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://Slimefun5.github.io/builds/src/frontend.js"></script>
+</head>
+<body owner="Slimefun5" repository="Slimefun5" branch="experimental">
+    <div class="header">
+        <a class="link_main" href="https://Slimefun5.github.io/builds/">
+            <img class="back_arrow" alt="go back" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/arrow-left.svg">
+            <span style="padding-left: 12px;"> Back to all Repositories</span>
+        </a>
+    </div>
+    <div class="overlay" style="display: none;">
+        <div class="badge_box">
+            <button id="close_badge" class="close_badge_button"><img style="height: 16px; padding-top: 4px;" alt="close" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/x.svg" /></button>
+            <div class="badge" style="margin-top: 12px;"><img alt="status badge" src="badge.svg" /></div>
+            <div style="padding: 2px; margin-top: 6px;"><div style="font-weight: bold;">HTML</div><input class="badge_url" type="text" id="badge_html" readonly /><button id="copy_html" style="padding-bottom: 5px;"><img style="height: 16px; padding-top: 4px;" alt="link" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/clippy.svg" /></button></div>
+            <div style="padding: 2px;"><div style="font-weight: bold;">Markdown</div><input class="badge_url" type="text" id="badge_markdown" readonly /><button id="copy_markdown" style="padding-bottom: 5px;"><img style="height: 16px; padding-top: 4px;" alt="link" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/clippy.svg" /></button></div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="box sidebar">
+            <div class="sidebar_content">
+                <span class="info_header">Project Info</span>
+                <div class="sidebar_info">
+                    <div class="info_repo"><table class="info_table"><tr class="project_info"><td class="icon"><img class="icon" alt="repository" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/repo.svg" /></td><td class="table_label" style="width: auto;"><a id="sidebar_link" class="link_info" href="https://github.com/Slimefun5/Slimefun5">Slimefun5 / Slimefun5</a></td></tr><tr class="project_info"><td class="icon"><img class="icon" alt="branch" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/git-branch.svg" /></td><td class="table_label" style="width: auto;">experimental</td></tr></table></div>
+                </div>
+            </div>
+            <div id="builds">
+                <div style="width: 100%; text-align: center;"><img style="width: 50%;" class="loading" alt="loading" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/sync.svg" /></div>
+            </div>
+        </div>
+        <div class="box content"><div style="width: 100%; text-align: center;"><img style="width: 25%;" class="loading" alt="loading" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/sync.svg" /></div></div>
+    </div>
+</body>
+</html>

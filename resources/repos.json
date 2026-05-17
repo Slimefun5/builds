@@ -1,0 +1,172 @@
+{
+    "Slimefun5/DynaTech:experimental":  {
+                                            "options":  {
+                                                            "prefix":  "EXP"
+                                                        }
+                                        },
+    "Slimefun5/SlimeTinker:stable":  {
+                                         "options":  {
+                                                         "prefix":  "STABLE"
+                                                     }
+                                     },
+    "Slimefun5/Networks:experimental":  {
+                                            "options":  {
+                                                            "prefix":  "EXP"
+                                                        }
+                                        },
+    "Slimefun5/SlimefunAdvancements:experimental":  {
+                                                        "options":  {
+                                                                        "prefix":  "EXP"
+                                                                    }
+                                                    },
+    "Slimefun5/DynaTech:stable":  {
+                                      "options":  {
+                                                      "prefix":  "STABLE"
+                                                  }
+                                  },
+    "Slimefun5/ExtraGear:stable":  {
+                                       "options":  {
+                                                       "prefix":  "STABLE"
+                                                   }
+                                   },
+    "Slimefun5/LuckyBlocks:experimental":  {
+                                               "options":  {
+                                                               "prefix":  "EXP"
+                                                           }
+                                           },
+    "Slimefun5/InfinityLib:stable":  {
+                                         "options":  {
+                                                         "prefix":  "STABLE"
+                                                     }
+                                     },
+    "Slimefun5/ExoticGarden:experimental":  {
+                                                "options":  {
+                                                                "prefix":  "EXP"
+                                                            }
+                                            },
+    "Slimefun5/InfinityLib:experimental":  {
+                                               "options":  {
+                                                               "prefix":  "EXP"
+                                                           }
+                                           },
+    "Slimefun5/Slimefun5:stable":  {
+                                       "options":  {
+                                                       "prefix":  "STABLE"
+                                                   }
+                                   },
+    "Slimefun5/ExtraUtils:experimental":  {
+                                              "options":  {
+                                                              "prefix":  "EXP"
+                                                          }
+                                          },
+    "Slimefun5/Galactifun:experimental":  {
+                                              "options":  {
+                                                              "prefix":  "EXP"
+                                                          }
+                                          },
+    "Slimefun5/LiteXpansion:stable":  {
+                                          "options":  {
+                                                          "prefix":  "STABLE"
+                                                      }
+                                      },
+    "Slimefun5/InfinityExpansion:experimental":  {
+                                                     "options":  {
+                                                                     "prefix":  "EXP"
+                                                                 }
+                                                 },
+    "Slimefun5/Galactifun:stable":  {
+                                        "options":  {
+                                                        "prefix":  "STABLE"
+                                                    }
+                                    },
+    "Slimefun5/SlimefunAdvancements:stable":  {
+                                                  "options":  {
+                                                                  "prefix":  "STABLE"
+                                                              }
+                                              },
+    "Slimefun5/FluffyMachines:experimental":  {
+                                                  "options":  {
+                                                                  "prefix":  "EXP"
+                                                              }
+                                              },
+    "Slimefun5/ChestTerminal:experimental":  {
+                                                 "options":  {
+                                                                 "prefix":  "EXP"
+                                                             }
+                                             },
+    "Slimefun5/InfinityExpansion:stable":  {
+                                               "options":  {
+                                                               "prefix":  "STABLE"
+                                                           }
+                                           },
+    "Slimefun5/Networks:stable":  {
+                                      "options":  {
+                                                      "prefix":  "STABLE"
+                                                  }
+                                  },
+    "Slimefun5/SlimeTinker:experimental":  {
+                                               "options":  {
+                                                               "prefix":  "EXP"
+                                                           }
+                                           },
+    "Slimefun5/ChestTerminal:stable":  {
+                                           "options":  {
+                                                           "prefix":  "STABLE"
+                                                       }
+                                       },
+    "Slimefun5/MissileWarfare:experimental":  {
+                                                  "options":  {
+                                                                  "prefix":  "EXP"
+                                                              }
+                                              },
+    "Slimefun5/ExoticGarden:stable":  {
+                                          "options":  {
+                                                          "prefix":  "STABLE"
+                                                      }
+                                      },
+    "Slimefun5/SensibleToolbox:stable":  {
+                                             "options":  {
+                                                             "prefix":  "STABLE"
+                                                         }
+                                         },
+    "Slimefun5/Slimefun5:experimental":  {
+                                             "options":  {
+                                                             "prefix":  "EXP"
+                                                         }
+                                         },
+    "Slimefun5/FluffyMachines:stable":  {
+                                            "options":  {
+                                                            "prefix":  "STABLE"
+                                                        }
+                                        },
+    "Slimefun5/ExtraGear:experimental":  {
+                                             "options":  {
+                                                             "prefix":  "EXP"
+                                                         }
+                                         },
+    "Slimefun5/LiteXpansion:experimental":  {
+                                                "options":  {
+                                                                "prefix":  "EXP"
+                                                            }
+                                            },
+    "Slimefun5/LuckyBlocks:stable":  {
+                                         "options":  {
+                                                         "prefix":  "STABLE"
+                                                     }
+                                     },
+    "Slimefun5/SensibleToolbox:experimental":  {
+                                                   "options":  {
+                                                                   "prefix":  "EXP"
+                                                               }
+                                               },
+    "Slimefun5/ExtraUtils:stable":  {
+                                        "options":  {
+                                                        "prefix":  "STABLE"
+                                                    }
+                                    },
+    "Slimefun5/MissileWarfare:stable":  {
+                                            "options":  {
+                                                            "prefix":  "STABLE"
+                                                        }
+                                        }
+}
