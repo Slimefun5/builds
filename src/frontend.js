@@ -4,7 +4,7 @@ $(() => {
     let repository = body.attr("repository");
     let branch = body.attr("branch");
 
-    $.getJSON("https://Slimefun5.github.io/builds/resources/repos.json", repos => {
+    $.getJSON("resources/repos.json", repos => {
         let info = repos[`${owner}/${repository}:${branch}`];
         let directory = `${owner}/${repository}/${branch}`;
 
@@ -221,9 +221,9 @@ function createBadge(directory, language) {
     var url = "";
 
     if (language === "markdown") {
-        url = `[![Build Status](https://Slimefun5.github.io/builds/${directory}/badge.svg)](https://Slimefun5.github.io/builds/${directory})`;
+        url = `[![Build Status](${directory}/badge.svg)](https://Slimefun5.github.io/builds/${directory})`;
     } else if (language === "html") {
-        url = `<a href="https://Slimefun5.github.io/builds/${directory}"><img src="https://Slimefun5.github.io/builds/${directory}/badge.svg" alt="Build Status"/></a>`;
+        url = `<a href="https://Slimefun5.github.io/builds/${directory}"><img src="${directory}/badge.svg" alt="Build Status"/></a>`;
     }
 
     $("#badge_" + language).attr("value", url);
@@ -233,4 +233,5 @@ function createBadge(directory, language) {
         document.execCommand("Copy");
     });
 }
+
 
