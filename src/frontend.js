@@ -132,7 +132,7 @@ $(() => {
             }
         }
 
-        $.getJSON(`https://Slimefun5.github.io/builds/${directory}/builds.json`, builds => {
+        $.getJSON(`builds.json`, builds => {
             let last_successful = builds.last_successful;
 
             // Get currently selected Build
@@ -221,7 +221,7 @@ function createBadge(directory, language) {
     var url = "";
 
     if (language === "markdown") {
-        url = `[![Build Status](${directory}/badge.svg)](https://Slimefun5.github.io/builds/${directory})`;
+        url = `[![Build Status](https://Slimefun5.github.io/builds/${directory}/badge.svg)](https://Slimefun5.github.io/builds/${directory})`;
     } else if (language === "html") {
         url = `<a href="https://Slimefun5.github.io/builds/${directory}"><img src="${directory}/badge.svg" alt="Build Status"/></a>`;
     }
