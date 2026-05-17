@@ -1,5 +1,5 @@
 $(function() {
-    $.getJSON("resources/repos.json", repos => {
+    $.getJSON("/builds/resources/repos.json", repos => {
         $("#repos").html("");
         let profiles = [];
 
@@ -65,7 +65,7 @@ function addRepository(table, directory, owner, repo, branch, projectType) {
                 <a class="link_info" href="${directory}">${repo} (${branch})${projectType == 'abandoned' ? " [abandoned]" : ""}</a>
             </td>
             <td>
-                <img class="badge" alt="project badge" src="${directory}/badge.svg" />
+                <img class="badge" alt="project badge" src="/builds/${directory}/badge.svg" />
             </td>
         </tr>
     `);

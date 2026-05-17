@@ -4,7 +4,7 @@ $(() => {
     let repository = body.attr("repository");
     let branch = body.attr("branch");
 
-    $.getJSON("resources/repos.json", repos => {
+    $.getJSON("/builds/resources/repos.json", repos => {
         let info = repos[`${owner}/${repository}:${branch}`];
         let directory = `${owner}/${repository}/${branch}`;
 
@@ -132,7 +132,7 @@ $(() => {
             }
         }
 
-        $.getJSON(`builds.json`, builds => {
+        $.getJSON(`/builds/${directory}/builds.json`, builds => {
             let last_successful = builds.last_successful;
 
             // Get currently selected Build
