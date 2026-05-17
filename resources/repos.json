@@ -54,11 +54,7 @@
                                                        "prefix":  "STABLE"
                                                    }
                                    },
-    "Slimefun5/ExtraUtils:experimental":  {
-                                              "options":  {
-                                                              "prefix":  "EXP"
-                                                          }
-                                          },
+
     "Slimefun5/Galactifun:experimental":  {
                                               "options":  {
                                                               "prefix":  "EXP"
@@ -159,11 +155,6 @@
                                                                    "prefix":  "EXP"
                                                                }
                                                },
-    "Slimefun5/ExtraUtils:stable":  {
-                                        "options":  {
-                                                        "prefix":  "STABLE"
-                                                    }
-                                    },
     "Slimefun5/MissileWarfare:stable":  {
                                             "options":  {
                                                             "prefix":  "STABLE"
