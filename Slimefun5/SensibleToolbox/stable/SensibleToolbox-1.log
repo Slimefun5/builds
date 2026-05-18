@@ -1,0 +1,64 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/items/PaintBrush.java:332: warning: [removal] name() in OldEnum has been deprecated and marked for removal
+            menu.addGadget(new ButtonGadget(menu, i, CustomItemStack.create(Material.PAINTING, art.name(), "", "&7Click to select this artwork"), new Runnable() {
+                                                                                                  ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/items/PaintBrush.java:352: warning: [removal] values() in Art has been deprecated and marked for removal
+        for (Art a : Art.values()) {
+                        ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/items/EnderLeash.java:284: warning: [removal] valueOf(@org.jetbrains.annotations.NotNull String) in Type has been deprecated and marked for removal
+                cat.setCatType(Type.valueOf(conf.getString("catType")));
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/blocks/machines/BasicSolarCell.java:316: warning: [removal] CARPETS in Tag has been deprecated and marked for removal
+        if (Tag.CARPETS.isTagged(event.getBlock().getType())) {
+               ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/commands/ChargeCommand.java:52: warning: [removal] getData() in BlockState has been deprecated and marked for removal
+                b = b.getRelative(((Attachable) s.getData()).getAttachedFace());
+                                                 ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/commands/SoundCommand.java:30: warning: [removal] valueOf(@org.jetbrains.annotations.NotNull String) in Sound has been deprecated and marked for removal
+            Sound sound = Sound.valueOf(args[0].toUpperCase());
+                               ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/commands/SoundCommand.java:45: warning: [removal] getKey() in Sound has been deprecated and marked for removal
+                if (s.getKey().getKey().toUpperCase(java.util.Locale.ROOT).startsWith(args[0].toUpperCase(java.util.Locale.ROOT))) {
+                     ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/commands/SoundCommand.java:46: warning: [removal] getKey() in Sound has been deprecated and marked for removal
+                    list.add(s.getKey().getKey().toUpperCase(java.util.Locale.ROOT));
+                              ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/io/github/thebusybiscuit/sensibletoolbox/utils/STBUtil.java:502: warning: [removal] getData() in Block has been deprecated and marked for removal
+        return block.isLiquid() && block.getData() == 0;
+                                        ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/me/desht/dhutils/blocks/BlockUtil.java:94: warning: [removal] getData() in BlockState has been deprecated and marked for removal
+        if (bs.getData() instanceof Attachable) {
+              ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/me/desht/dhutils/blocks/BlockUtil.java:95: warning: [removal] getData() in BlockState has been deprecated and marked for removal
+            Attachable a = (Attachable) bs.getData();
+                                          ^
+/home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/src/main/java/me/desht/dhutils/blocks/BlockUtil.java:114: warning: [removal] getData() in BlockState has been deprecated and marked for removal
+            Sign s = (Sign) block.getState().getData();
+                                            ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+12 warnings
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/SensibleToolbox/stable/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 22s
+5 actionable tasks: 5 executed
