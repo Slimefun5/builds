@@ -6,12 +6,12 @@ module.exports = (assert, github) => {
 
         testJobs(false, (job) => github.getLicense(job));
 
-        it("should resolve for 'Slimefun5/builds'", () => {
+        it("should resolve for 'Slimefun5/Slimefun5'", () => {
             var job = {
                 author: "Slimefun5",
-                repo: "builds",
-                branch: "gh-pages",
-				directory: "Slimefun5/builds/gh-pages"
+                repo: "Slimefun5",
+                branch: "main",
+				directory: "Slimefun5/Slimefun5/main"
             }
 
             return github.getLicense(job).then((license) => Promise.all([
