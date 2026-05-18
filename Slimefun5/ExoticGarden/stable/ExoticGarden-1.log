@@ -1,0 +1,107 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:128: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Grape", ChatColor.RED, Color.RED, PlantType.BUSH, "6ee97649bd999955413fcbf0b269c91be4342b10d0755bad7a17e95fcefdab0");
+                               ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:129: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Blueberry", ChatColor.BLUE, Color.BLUE, PlantType.BUSH, "a5a5c4a0a16dabc9b1ec72fc83e23ac15d0197de61b138babca7c8a29c820");
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:130: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Elderberry", ChatColor.RED, Color.FUCHSIA, PlantType.BUSH, "1e4883a1e22c324e753151e2ac424c74f1cc646eec8ea0db3420f1dd1d8b");
+                                    ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:131: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Raspberry", ChatColor.LIGHT_PURPLE, Color.FUCHSIA, PlantType.BUSH, "8262c445bc2dd1c5bbc8b93f2482f9fdbef48a7245e1bdb361d4a568190d9b5");
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:132: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Blackberry", ChatColor.DARK_GRAY, Color.GRAY, PlantType.BUSH, "2769f8b78c42e272a669d6e6d19ba8651b710ab76f6b46d909d6a3d482754");
+                                    ^
+
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:133: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Cranberry", ChatColor.RED, Color.FUCHSIA, PlantType.BUSH, "d5fe6c718fba719ff622237ed9ea6827d093effab814be2192e9643e3e3d7");
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:134: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Cowberry", ChatColor.RED, Color.FUCHSIA, PlantType.BUSH, "a04e54bf255ab0b1c498ca3a0ceae5c7c45f18623a5a02f78a7912701a3249");
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:135: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerBerry("Strawberry", ChatColor.DARK_RED, Color.FUCHSIA, PlantType.FRUIT, "cbc826aaafb8dbf67881e68944414f13985064a3f8f044d8edfb4443e76ba");
+                                    ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:137: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Tomato", ChatColor.DARK_RED, PlantType.FRUIT, "99172226d276070dc21b75ba25cc2aa5649da5cac745ba977695b59aebd");
+                                ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:138: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Lettuce", ChatColor.DARK_GREEN, PlantType.FRUIT, "477dd842c975d8fb03b1add66db8377a18ba987052161f22591e6a4ede7f5");
+                                 ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:139: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Tea Leaf", ChatColor.GREEN, PlantType.DOUBLE_PLANT, "1514c8b461247ab17fe3606e6e2f4d363dccae9ed5bedd012b498d7ae8eb3");
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:140: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Cabbage", ChatColor.DARK_GREEN, PlantType.FRUIT, "fcd6d67320c9131be85a164cd7c5fcf288f28c2816547db30a3187416bdc45b");
+                                 ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:141: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Sweet Potato", ChatColor.GOLD, PlantType.FRUIT, "3ff48578b6684e179944ab1bc75fec75f8fd592dfb456f6def76577101a66");
+                                      ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:142: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Mustard Seed", ChatColor.YELLOW, PlantType.FRUIT, "ed53a42495fa27fb925699bc3e5f2953cc2dc31d027d14fcf7b8c24b467121f");
+                                      ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:143: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Curry Leaf", ChatColor.DARK_GREEN, PlantType.DOUBLE_PLANT, "32af7fa8bdf3252f69863b204559d23bfc2b93d41437103437ab1935f323a31f");
+                                    ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:144: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Onion", ChatColor.RED, PlantType.FRUIT, "6ce036e327cb9d4d8fef36897a89624b5d9b18f705384ce0d7ed1e1fc7f56");
+                               ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:145: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Garlic", ChatColor.RESET, PlantType.FRUIT, "3052d9c11848ebcc9f8340332577bf1d22b643c34c6aa91fe4c16d5a73f6d8");
+                                ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:146: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Cilantro", ChatColor.GREEN, PlantType.DOUBLE_PLANT, "16149196f3a8d6d6f24e51b27e4cb71c6bab663449daffb7aa211bbe577242");
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:147: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Black Pepper", ChatColor.DARK_GRAY, PlantType.DOUBLE_PLANT, "2342b9bf9f1f6295842b0efb591697b14451f803a165ae58d0dcebd98eacc");
+                                      ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:149: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Corn", ChatColor.GOLD, PlantType.DOUBLE_PLANT, "9bd3802e5fac03afab742b0f3cca41bcd4723bee911d23be29cffd5b965f1");
+                              ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:150: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Pineapple", ChatColor.GOLD, PlantType.DOUBLE_PLANT, "d7eddd82e575dfd5b7579d89dcd2350c991f0483a7647cffd3d2c587f21");
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:152: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+        registerPlant("Red Bell Pepper", ChatColor.RED, PlantType.DOUBLE_PLANT, "65f7810414a2cee2bc1de12ecef7a4c89fc9b38e9d0414a90991241a5863705f");
+                                         ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:309: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+    public void registerBerry(String name, ChatColor color, Color potionColor, PlantType type, String texture) {
+                                           ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/ExoticGarden.java:337: warning: [deprecation] ChatColor in org.bukkit has been deprecated
+    public void registerPlant(String name, ChatColor color, PlantType type, String texture) {
+                                           ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/schematics/Schematic.java:138: warning: [deprecation] isInteractable() in Material has been deprecated
+                    if ((!blockType.isSolid() && !blockType.isInteractable() && !SlimefunTag.UNBREAKABLE_MATERIALS.isTagged(blockType)) || blockType == Material.AIR || blockType == Material.CAVE_AIR || org.bukkit.Tag.SAPLINGS.isTagged(blockType)) {
+                                                           ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/CustomPotion.java:35: warning: [deprecation] setDisplayName(@org.jetbrains.annotations.Nullable String) in ItemMeta has been deprecated
+        meta.setDisplayName(ChatColors.color(name));
+            ^
+/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/src/main/java/io/github/thebusybiscuit/exoticgarden/CustomPotion.java:36: warning: [deprecation] setLore(@org.jetbrains.annotations.Nullable List<String>) in ItemMeta has been deprecated
+        meta.setLore(list);
+            ^
+27 warnings
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 12s
+5 actionable tasks: 5 executed
