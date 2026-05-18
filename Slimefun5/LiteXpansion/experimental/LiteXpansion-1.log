@@ -1,0 +1,72 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/machine/generators/Generator.java:90: warning: [removal] CARPETS in Tag has been deprecated and marked for removal
+            for (Material mat : Tag.CARPETS.getValues()) {
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/weapons/NanoBlade.java:75: warning: [removal] AttributeModifier(@org.jetbrains.annotations.NotNull UUID,@org.jetbrains.annotations.NotNull String,double,@org.jetbrains.annotations.NotNull Operation,@org.jetbrains.annotations.Nullable EquipmentSlot) in AttributeModifier has been deprecated and marked for removal
+                new AttributeModifier(UUID.randomUUID(), Attribute.ATTACK_DAMAGE.getKey().getKey(), damage,
+                ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:37: warning: [removal] translationKey() in Enchantment has been deprecated and marked for removal
+    public String translationKey() {
+                  ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:165: warning: [removal] getDamageIncrease(int,@org.jetbrains.annotations.NotNull EntityType) in Enchantment has been deprecated and marked for removal
+    public float getDamageIncrease(int level, @Nonnull org.bukkit.entity.EntityType entityType) {
+                 ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:160: warning: [removal] getDamageIncrease(int,@org.jetbrains.annotations.NotNull EntityCategory) in Enchantment has been deprecated and marked for removal
+    public float getDamageIncrease(int level, @Nonnull EntityCategory entityCategory) {
+                 ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:155: warning: [removal] getRarity() in Enchantment has been deprecated and marked for removal
+    public io.papermc.paper.enchantments.EnchantmentRarity getRarity() {
+                                                           ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:66: warning: [removal] getItemTarget() in Enchantment has been deprecated and marked for removal
+    public EnchantmentTarget getItemTarget() {
+                             ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:50: warning: [removal] getName() in Enchantment has been deprecated and marked for removal
+    public String getName() {
+                  ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:43: warning: [removal] getTranslationKey() in Translatable has been deprecated and marked for removal
+    public String getTranslationKey() {
+                  ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:66: warning: [removal] EnchantmentTarget in org.bukkit.enchantments has been deprecated and marked for removal
+    public EnchantmentTarget getItemTarget() {
+           ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:67: warning: [removal] EnchantmentTarget in org.bukkit.enchantments has been deprecated and marked for removal
+        return EnchantmentTarget.ALL;
+               ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:67: warning: [removal] ALL in EnchantmentTarget has been deprecated and marked for removal
+        return EnchantmentTarget.ALL;
+                                ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:155: warning: [removal] EnchantmentRarity in io.papermc.paper.enchantments has been deprecated and marked for removal
+    public io.papermc.paper.enchantments.EnchantmentRarity getRarity() {
+                                        ^
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/enchants/GlowEnchant.java:156: warning: [removal] EnchantmentRarity in io.papermc.paper.enchantments has been deprecated and marked for removal
+        return io.papermc.paper.enchantments.EnchantmentRarity.COMMON;
+                                            ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/utils/Reflections.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+14 warnings
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 12s
+5 actionable tasks: 5 executed
