@@ -91,7 +91,7 @@ function addBuild (job, logging) {
         status: (job.success ? 'SUCCESS' : 'FAILURE')
       }
 
-      if (job.options && !job.options.createJar) {
+      if (job.options && job.options.createJar === false) {
         builds[job.id].status = 'COMPILE_ONLY'
       }
 

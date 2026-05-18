@@ -127,8 +127,8 @@ function check (job, logging) {
         date: github.parseDate(commit.commit.committer.date),
         timestamp: timestamp,
         message: commit.commit.message,
-        author: commit.author.name,
-        avatar: commit.author.avatar_url
+        author: commit.commit.author.name,
+        avatar: (commit.author && commit.author.avatar_url) || ''
       }
 
       github.hasUpdate(job, timestamp, logging).then(id => {
