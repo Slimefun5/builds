@@ -1,0 +1,160 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:352: warning: [removal] MaterialData in org.bukkit.material has been deprecated and marked for removal
+    public MaterialData getData() {
+           ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:353: warning: [removal] getData() in ItemStack has been deprecated and marked for removal
+        return this.delegate.getData();
+                            ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:358: warning: [removal] MaterialData in org.bukkit.material has been deprecated and marked for removal
+    public void setData(MaterialData data) {
+                        ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:359: warning: [removal] setData(@org.jetbrains.annotations.Nullable MaterialData) in ItemStack has been deprecated and marked for removal
+        this.delegate.setData(data);
+                     ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:441: warning: [removal] getTranslationKey() in ItemStack has been deprecated and marked for removal
+        return this.delegate.getTranslationKey();
+                            ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:469: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public String getI18NDisplayName() {
+                  ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:474: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public int getMaxItemUseDuration() {
+               ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:475: warning: [removal] getMaxItemUseDuration() in ItemStack has been deprecated and marked for removal
+        return this.delegate.getMaxItemUseDuration();
+                            ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:546: warning: [removal] ItemRarity in io.papermc.paper.inventory has been deprecated and marked for removal
+    public ItemRarity getRarity() {
+           ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/api/items/SlimefunItemStack.java:547: warning: [removal] getRarity() in ItemStack has been deprecated and marked for removal
+        return this.delegate.getRarity();
+                            ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/me/mrCookieSlime/Slimefun/Objects/SlimefunItem/interfaces/InventoryBlock.java:23: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public interface InventoryBlock {
+       ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/core/services/sounds/SoundEffect.java:133: warning: [removal] getKey() in Sound has been deprecated and marked for removal
+        this.defaultSound = sound.getKey().getKey();
+                                 ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/magical/staves/StormStaff.java:88: warning: [removal] FoodLevelChangeEvent(@org.jetbrains.annotations.NotNull HumanEntity,int) in FoodLevelChangeEvent has been deprecated and marked for removal
+            FoodLevelChangeEvent event = new FoodLevelChangeEvent(p, p.getFoodLevel() - 4);
+                                         ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/magical/staves/WindStaff.java:48: warning: [removal] FoodLevelChangeEvent(@org.jetbrains.annotations.NotNull HumanEntity,int) in FoodLevelChangeEvent has been deprecated and marked for removal
+                    FoodLevelChangeEvent event = new FoodLevelChangeEvent(p, p.getFoodLevel() - 2);
+                                                 ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/armor/StomperBoots.java:60: warning: [removal] EntityDamageByEntityEvent(@org.jetbrains.annotations.NotNull Entity,@org.jetbrains.annotations.NotNull Entity,@org.jetbrains.annotations.NotNull DamageCause,double) in EntityDamageByEntityEvent has been deprecated and marked for removal
+                    EntityDamageByEntityEvent event = new EntityDamageByEntityEvent(player, entity, DamageCause.ENTITY_ATTACK, fallDamageEvent.getDamage() / 2);
+                                                      ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/FluidPump.java:208: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+                    meta.setBasePotionData(new PotionData(PotionType.WATER));
+                                               ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/FluidPump.java:208: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+                    meta.setBasePotionData(new PotionData(PotionType.WATER));
+                        ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:154: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+        PotionData data = potion.getBasePotionData();
+        ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:154: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+        PotionData data = potion.getBasePotionData();
+                                ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:158: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(PotionType.WEAKNESS, false, false));
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:158: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(PotionType.WEAKNESS, false, false));
+                      ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:161: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(PotionType.AWKWARD, false, false));
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:161: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(PotionType.AWKWARD, false, false));
+                      ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:172: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(fermented, data.isExtended(), data.isUpgraded()));
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:172: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(fermented, data.isExtended(), data.isUpgraded()));
+                      ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:177: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+            potion.setBasePotionData(new PotionData(type, true, false));
+                                         ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:177: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+            potion.setBasePotionData(new PotionData(type, true, false));
+                  ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:181: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+            potion.setBasePotionData(new PotionData(type, false, true));
+                                         ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:181: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+            potion.setBasePotionData(new PotionData(type, false, true));
+                  ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:187: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(potionRecipe, false, false));
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/electric/machines/AutoBrewer.java:187: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+                potion.setBasePotionData(new PotionData(potionRecipe, false, false));
+                      ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/weapons/ExplosiveBow.java:66: warning: [removal] EntityDamageByEntityEvent(@org.jetbrains.annotations.NotNull Entity,@org.jetbrains.annotations.NotNull Entity,@org.jetbrains.annotations.NotNull DamageCause,double) in EntityDamageByEntityEvent has been deprecated and marked for removal
+                    EntityDamageByEntityEvent event = new EntityDamageByEntityEvent(e.getDamager(), entity, EntityDamageEvent.DamageCause.ENTITY_EXPLOSION, damage);
+                                                      ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/weapons/SeismicAxe.java:127: warning: [removal] EntityDamageByEntityEvent(@org.jetbrains.annotations.NotNull Entity,@org.jetbrains.annotations.NotNull Entity,@org.jetbrains.annotations.NotNull DamageCause,double) in EntityDamageByEntityEvent has been deprecated and marked for removal
+            EntityDamageByEntityEvent event = new EntityDamageByEntityEvent(p, entity, DamageCause.ENTITY_ATTACK, DAMAGE);
+                                              ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/listeners/AutoCrafterListener.java:74: warning: [removal] DO_LIMITED_CRAFTING in GameRule has been deprecated and marked for removal
+                    boolean doLimitedCrafting = e.getPlayer().getWorld().getGameRuleValue(GameRule.DO_LIMITED_CRAFTING);
+                                                                                                  ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/setup/SlimefunItemSetup.java:844: warning: [removal] PotionData in org.bukkit.potion has been deprecated and marked for removal
+            meta.setBasePotionData(new PotionData(PotionType.WEAKNESS, false, false));
+                                       ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/setup/SlimefunItemSetup.java:844: warning: [removal] setBasePotionData(@org.jetbrains.annotations.Nullable PotionData) in PotionMeta has been deprecated and marked for removal
+            meta.setBasePotionData(new PotionData(PotionType.WEAKNESS, false, false));
+                ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/setup/SlimefunItemSetup.java:2388: warning: [removal] ExpCollector(ItemGroup,SlimefunItemStack,RecipeType,ItemStack[]) in ExpCollector has been deprecated and marked for removal
+        new ExpCollector(itemGroups.electricity, SlimefunItems.EXP_COLLECTOR, RecipeType.ENHANCED_CRAFTING_TABLE,
+        ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/integrations/McMMOIntegration.java:42: warning: [removal] getPlaceStore() in mcMMO has been deprecated and marked for removal
+            mcMMO.getPlaceStore().setTrue(e.getBlock());
+                 ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/integrations/WorldEditIntegration.java:50: warning: [removal] getBlockX() in BlockVector3 has been deprecated and marked for removal
+                        Location l = new Location(world, pos.getBlockX(), pos.getBlockY(), pos.getBlockZ());
+                                                            ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/integrations/WorldEditIntegration.java:50: warning: [removal] getBlockY() in BlockVector3 has been deprecated and marked for removal
+                        Location l = new Location(world, pos.getBlockX(), pos.getBlockY(), pos.getBlockZ());
+                                                                             ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/integrations/WorldEditIntegration.java:50: warning: [removal] getBlockZ() in BlockVector3 has been deprecated and marked for removal
+                        Location l = new Location(world, pos.getBlockX(), pos.getBlockY(), pos.getBlockZ());
+                                                                                              ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/utils/biomes/BiomeMapParser.java:173: warning: [removal] valueOf(@org.jetbrains.annotations.NotNull String) in Biome has been deprecated and marked for removal
+                        Biome biome = Biome.valueOf(formattedValue);
+                                           ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/utils/SlimefunUtils.java:497: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+            return potionMeta.getBasePotionData().equals(sfPotionMeta.getBasePotionData());
+                             ^
+/home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/src/main/java/io/github/thebusybiscuit/slimefun5/utils/SlimefunUtils.java:497: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+            return potionMeta.getBasePotionData().equals(sfPotionMeta.getBasePotionData());
+                                                                     ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+44 warnings
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Slimefun5/stable/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 35s
+5 actionable tasks: 5 executed
