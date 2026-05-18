@@ -316,10 +316,9 @@ function finish (job, logging) {
 
   updateStatus(job, 'Uploading')
 
-  return Promise.all([
-    github.pushChanges(job, logging),
-    projects.clearWorkspace(job)
-  ])
+  return projects.clearWorkspace(job).then(() => {
+    return github.pushChanges(job, logging)
+  })
 }
 
 /**
