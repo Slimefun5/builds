@@ -6,12 +6,12 @@ module.exports = (assert, github) => {
 
         testJobs(false, (job) => github.getTags(job));
 
-        it("should resolve for 'Slimefun5/GitHubWebAPI4Java'", () => {
+        it("should resolve for 'Slimefun5/Slimefun5'", () => {
             var job = {
                 author: "Slimefun5",
-                repo: "GitHubWebAPI4Java",
-                branch: "master",
-                directory: "Slimefun5/GitHubWebAPI4Java/master"
+                repo: "Slimefun5",
+                branch: "main",
+                directory: "Slimefun5/Slimefun5/main"
             }
 
             return github.getTags(job).then((tags) => Promise.all([
@@ -24,12 +24,12 @@ module.exports = (assert, github) => {
             ]));
         });
 
-        it("should resolve with an empty Array for 'Slimefun5/Slimefun5:main' (No Tags)", () => {
+        it("should resolve with an empty Array for 'Slimefun5/builds:main' (No Tags)", () => {
             var job = {
                 author: "Slimefun5",
-                repo: "Slimefun5",
+                repo: "builds",
                 branch: "main",
-                directory: "Slimefun5/Slimefun5/main"
+                directory: "Slimefun5/builds/main"
             }
 
             return github.getTags(job).then((tags) => {
