@@ -1,10 +1,12 @@
 const path = require('path')
+const FileSystem = require('fs')
 
 const cfg = require('../src/config.js')(path.resolve(__dirname, '../resources/config.json'))
 
 // Modules
 const projects = require('../src/projects.js')
 const maven = require('../src/maven.js')
+const gradle = require('../src/gradle.js')
 const github = require('../src/github.js')(cfg.github)
 const discord = require('../src/discord.js')(cfg.discord)
 const log = require('../src/logger.js')
@@ -24,6 +26,18 @@ module.exports = {
      * @return {Object} Config
      */
   getConfig: () => cfg
+}
+
+/**
+ * This method checks if a project uses Gradle instead of Maven.
+ *
+ * @param  {Object} job  The currently handled Job Object
+ * @return {Boolean}     Whether the project uses Gradle
+ */
+function isGradleProject (job) {
+  const ktsFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle.kts')
+  const groovyFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle')
+  return FileSystem.existsSync(ktsFile) || FileSystem.existsSync(groovyFile)
 }
 
 /**
@@ -150,7 +164,8 @@ function update (job, logging) {
 
     github.clone(job, job.commit.sha, logging).then(() => {
       const name = (job.options ? job.options.prefix : 'DEV') + ' - ' + job.id + ' (git ' + job.commit.sha.substr(0, 8) + ')'
-      maven.setVersion(job, name, true).then(resolve, reject)
+      const builder = isGradleProject(job) ? gradle : maven
+      builder.setVersion(job, name, true).then(resolve, reject)
     }, reject)
   })
 }
@@ -178,7 +193,8 @@ function compile (job, logging) {
   return new Promise((resolve) => {
     log(logging, 'Compiling: ' + job.author + '/' + job.repo + ':' + job.branch + ' (' + job.id + ')')
 
-    maven.compile(job, cfg, logging)
+    const builder = isGradleProject(job) ? gradle : maven
+    builder.compile(job, cfg, logging)
       .then(() => {
         job.success = true
         resolve()
@@ -213,10 +229,12 @@ function gatherResources (job, logging) {
   return new Promise((resolve, reject) => {
     log(logging, 'Gathering Resources: ' + job.author + '/' + job.repo + ':' + job.branch)
 
+    const builder = isGradleProject(job) ? gradle : maven
+
     Promise.all([
       github.getLicense(job, logging),
       github.getTags(job, logging),
-      maven.relocate(job)
+      builder.relocate(job)
     ]).then((values) => {
       const license = values[0]
       const tags = values[1]
