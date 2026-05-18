@@ -1,0 +1,169 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:94: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askToWrite = new StringPrompt() {
+            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:94: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askToWrite = new StringPrompt() {
+                                    ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:96: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public String getPromptText(ConversationContext conversationContext) {
+                                            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:101: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                       ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:101: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                          ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:115: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askToRemove = new StringPrompt() {
+            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:115: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askToRemove = new StringPrompt() {
+                                     ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:117: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public String getPromptText(ConversationContext conversationContext) {
+                                            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:122: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                       ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:122: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                          ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:137: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askToRead = new StringPrompt() {
+            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:137: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askToRead = new StringPrompt() {
+                                   ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:139: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public String getPromptText(ConversationContext conversationContext) {
+                                            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:144: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                       ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:144: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                          ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:167: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askForID = new StringPrompt() {
+            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:167: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+            Prompt askForID = new StringPrompt() {
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:169: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public String getPromptText(ConversationContext conversationContext) {
+                                            ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:174: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                       ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:174: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                          ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:196: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:196: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:197: warning: [removal] Conversation in org.bukkit.conversations has been deprecated and marked for removal
+                Conversation conversation = cf.withFirstPrompt(askForID)
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:205: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:205: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/items/PlayerList.java:206: warning: [removal] Conversation in org.bukkit.conversations has been deprecated and marked for removal
+                Conversation conversation = cf.withFirstPrompt(askToRead)
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:135: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                Prompt askCoordY = new StringPrompt() {
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:135: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+                Prompt askCoordY = new StringPrompt() {
+                                       ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:137: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                    public String getPromptText(ConversationContext conversationContext) {
+                                                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:142: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                    public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                           ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:142: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                    public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                              ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:155: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                Prompt askCoordX = new StringPrompt() {
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:155: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+                Prompt askCoordX = new StringPrompt() {
+                                       ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:157: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                    public String getPromptText(ConversationContext conversationContext) {
+                                                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:162: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                    public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                           ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:162: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                    public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                              ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:175: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:175: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:176: warning: [removal] Conversation in org.bukkit.conversations has been deprecated and marked for removal
+                Conversation conversation = cf.withFirstPrompt(askCoordX)
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:191: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                Prompt askCruiseAlt = new StringPrompt() {
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:191: warning: [removal] StringPrompt in org.bukkit.conversations has been deprecated and marked for removal
+                Prompt askCruiseAlt = new StringPrompt() {
+                                          ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:193: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                    public String getPromptText(ConversationContext conversationContext) {
+                                                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:198: warning: [removal] Prompt in org.bukkit.conversations has been deprecated and marked for removal
+                    public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                           ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:198: warning: [removal] ConversationContext in org.bukkit.conversations has been deprecated and marked for removal
+                    public Prompt acceptInput(ConversationContext conversationContext, String s) {
+                                              ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:211: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:211: warning: [removal] ConversationFactory in org.bukkit.conversations has been deprecated and marked for removal
+                ConversationFactory cf = new ConversationFactory(MissileWarfare.getInstance());
+                                             ^
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/src/main/java/me/kaiyan/missilewarfare/blocks/GroundMissileLauncher.java:212: warning: [removal] Conversation in org.bukkit.conversations has been deprecated and marked for removal
+                Conversation conversation = cf.withFirstPrompt(askCruiseAlt)
+                ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+47 warnings
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/MissileWarfare/stable/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 18s
+5 actionable tasks: 5 executed
