@@ -1,0 +1,39 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/stable/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:57: warning: [removal] JavaPluginLoader in org.bukkit.plugin.java has been deprecated and marked for removal
+    public SFAdvancements(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+                          ^
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/stable/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:58: warning: [removal] JavaPlugin(JavaPluginLoader,PluginDescriptionFile,File,File) in JavaPlugin has been deprecated and marked for removal
+        super(loader, description, dataFolder, file);
+        ^
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/stable/files/src/main/java/me/char321/sfadvancements/api/criteria/MobKillCriterion.java:39: warning: [removal] match(String) in Registry has been deprecated and marked for removal
+        EntityType entityType = Registry.ENTITY_TYPE.match(entity);
+                                                    ^
+  where T is a type-variable:
+    T extends Keyed declared in interface Registry
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+Note: Some input files use or override a deprecated API.
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/stable/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 16s
+5 actionable tasks: 5 executed
