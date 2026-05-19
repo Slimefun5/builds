@@ -1,0 +1,48 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/Galactifun.java:57: warning: [removal] JavaPluginLoader in org.bukkit.plugin.java has been deprecated and marked for removal
+    public Galactifun(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+                      ^
+/home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/Galactifun.java:153: warning: [removal] spigot() in Bukkit has been deprecated and marked for removal
+            Bukkit.spigot().getConfig().set("world-settings.default.verbose", false);
+                  ^
+/home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/Galactifun.java:153: warning: [removal] getConfig() in Spigot has been deprecated and marked for removal
+            Bukkit.spigot().getConfig().set("world-settings.default.verbose", false);
+                           ^
+/home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/api/universe/attributes/atmosphere/Atmosphere.java:79: warning: [removal] DO_WEATHER_CYCLE in GameRule has been deprecated and marked for removal
+        world.setGameRule(GameRule.DO_WEATHER_CYCLE, this.weatherEnabled);
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/api/universe/attributes/atmosphere/Atmosphere.java:88: warning: [removal] DO_FIRE_TICK in GameRule has been deprecated and marked for removal
+        world.setGameRule(GameRule.DO_FIRE_TICK, this.flammable);
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/api/universe/attributes/DayCycle.java:88: warning: [removal] DO_DAYLIGHT_CYCLE in GameRule has been deprecated and marked for removal
+        world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
+                                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/src/main/java/io/github/addoncommunity/galactifun/Galactifun.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 warnings
+
+> Task :generateGithubDependencyMetadata
+> Task :processGitHubResources
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :shadowJar
+> Task :assemble
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/experimental/files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 18s
+5 actionable tasks: 5 executed
