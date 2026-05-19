@@ -1,0 +1,49 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:21: error: package dev.walshy.sfmetrics does not exist
+import dev.walshy.sfmetrics.MetricsModule;
+                           ^
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:57: warning: [removal] JavaPluginLoader in org.bukkit.plugin.java has been deprecated and marked for removal
+    public SFAdvancements(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+> Task :compileJava
+
+                          ^
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:58: warning: [removal] JavaPlugin(JavaPluginLoader,PluginDescriptionFile,File,File) in JavaPlugin has been deprecated and marked for removal
+        super(loader, description, dataFolder, file);
+        ^
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:64: error: cannot find symbol
+        MetricsModule.setup(this, 31436);
+        ^
+  symbol:   variable MetricsModule
+  location: class SFAdvancements
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/src/main/java/me/char321/sfadvancements/api/criteria/MobKillCriterion.java:39: warning: [removal] match(String) in Registry has been deprecated and marked for removal
+        EntityType entityType = Registry.ENTITY_TYPE.match(entity);
+                                                    ^
+  where T is a type-variable:
+    T extends Keyed declared in interface Registry
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+3 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/experimental/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:21: error: package dev.walshy.sfmetrics does not exist
+  import dev.walshy.sfmetrics.MetricsModule;
+                             ^
+  2 errors
+  3 warnings
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 19s
+1 actionable task: 1 executed
