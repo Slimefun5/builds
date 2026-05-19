@@ -1,0 +1,46 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/Networks/stable/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkVanillaGrabber.java:123: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+                    if (potionMeta.getBasePotionData().getType() != PotionType.WATER) {
+                                  ^
+/home/runner/work/builds/builds/Slimefun5/Networks/stable/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkControlV.java:144: warning: [removal] getPlaceStore() in mcMMO has been deprecated and marked for removal
+                mcMMO.getPlaceStore().setTrue(targetBlock);
+                     ^
+/home/runner/work/builds/builds/Slimefun5/Networks/stable/files/src/main/java/io/github/sefiraat/networks/utils/StackUtils.java:270: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+            if (!instanceOne.getBasePotionData().equals(instanceTwo.getBasePotionData())) {
+                            ^
+/home/runner/work/builds/builds/Slimefun5/Networks/stable/files/src/main/java/io/github/sefiraat/networks/utils/StackUtils.java:270: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+            if (!instanceOne.getBasePotionData().equals(instanceTwo.getBasePotionData())) {
+                                                                   ^
+/home/runner/work/builds/builds/Slimefun5/Networks/stable/files/src/main/java/io/github/sefiraat/networks/Networks.java:97: error: cannot find symbol
+        metrics.addCustomChart(networksChart);
+        ^
+  symbol:   variable metrics
+  location: class Networks
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+4 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/Networks/stable/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkVanillaGrabber.java:123: warning: [removal] getBasePotionData() in PotionMeta has been deprecated and marked for removal
+                      if (potionMeta.getBasePotionData().getType() != PotionType.WATER) {
+                                    ^
+  1 error
+  4 warnings
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 16s
+1 actionable task: 1 executed
