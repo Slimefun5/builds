@@ -35,9 +35,12 @@ module.exports = {
  * @return {Boolean}     Whether the project uses Gradle
  */
 function isGradleProject (job) {
-  const ktsFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle.kts')
-  const groovyFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle')
-  return FileSystem.existsSync(ktsFile) || FileSystem.existsSync(groovyFile)
+  // A multi-module Gradle project may only have settings.gradle(.kts) at its root, with the
+  // build.gradle(.kts) files living in subprojects - so detect the settings file too.
+  const candidates = [
+    'build.gradle.kts', 'build.gradle', 'settings.gradle.kts', 'settings.gradle'
+  ]
+  return candidates.some(name => FileSystem.existsSync(path.resolve(__dirname, '../' + job.directory + '/files/' + name)))
 }
 
 /**
