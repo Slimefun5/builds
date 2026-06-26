@@ -33,7 +33,13 @@ function setVersion (job, version, compact) {
     const ktsFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle.kts')
     const groovyFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle')
 
-    const file = FileSystem.existsSync(ktsFile) ? ktsFile : groovyFile
+    const file = FileSystem.existsSync(ktsFile) ? ktsFile : (FileSystem.existsSync(groovyFile) ? groovyFile : null)
+
+    // Multi-module projects may define no version at the root; skip injection gracefully
+    if (!file) {
+      resolve()
+      return
+    }
 
     fs.readFile(file, 'utf8').then((data) => {
       const updated = data.replace(/^version\s*=\s*"[^"]*"/m, 'version = "' + version + '"')
@@ -95,32 +101,72 @@ function compile (job, cfg, logging) {
  * @param  {Object} job      The currently handled Job Object
  * @return {Promise}         A promise that resolves when this activity finished
  */
+function isPluginJar (name) {
+  return name.endsWith('.jar') &&
+    !name.endsWith('-sources.jar') &&
+    !name.endsWith('-javadoc.jar') &&
+    !name.endsWith('-slim.jar')
+}
+
+/**
+ * Recursively collects plugin jars found under any build/libs directory. Used as a
+ * fallback for multi-module projects whose jar is emitted in a submodule rather than
+ * the project root. Skips large irrelevant trees (.git, .gradle, caches).
+ */
+function collectJars (dir) {
+  let results = []
+  let entries
+
+  try {
+    entries = FileSystem.readdirSync(dir, { withFileTypes: true })
+  } catch (error) {
+    return results
+  }
+
+  for (const entry of entries) {
+    if (entry.isDirectory()) {
+      if (entry.name === '.git' || entry.name === '.gradle' || entry.name === 'node_modules') {
+        continue
+      }
+      results = results.concat(collectJars(path.join(dir, entry.name)))
+    } else if (isPluginJar(entry.name) && path.join(dir, entry.name).replace(/\\/g, '/').includes('/build/libs/')) {
+      results.push(path.join(dir, entry.name))
+    }
+  }
+
+  return results
+}
+
 function relocate (job) {
   if (!job.success) {
     return Promise.resolve()
   }
 
-  const libsDir = path.resolve(__dirname, '../' + job.directory + '/files/build/libs')
+  const filesDir = path.resolve(__dirname, '../' + job.directory + '/files')
+  const rootLibs = path.resolve(filesDir, 'build/libs')
   const dest = path.resolve(__dirname, '../' + job.directory + '/' + job.repo + '-' + job.id + '.jar')
 
   return new Promise((resolve, reject) => {
-    fs.readdir(libsDir).then((files) => {
-      const jars = files.filter(f =>
-        f.endsWith('.jar') &&
-        !f.endsWith('-sources.jar') &&
-        !f.endsWith('-javadoc.jar') &&
-        !f.endsWith('-slim.jar')
-      )
+    let candidates = []
 
-      if (jars.length === 0) {
-        reject(new Error('No jar file found in build/libs/'))
-        return
-      }
+    // Single-module projects (the common case) emit their jar in the root build/libs
+    if (FileSystem.existsSync(rootLibs)) {
+      candidates = FileSystem.readdirSync(rootLibs).filter(isPluginJar).map(f => path.resolve(rootLibs, f))
+    }
 
-      // Pick the first matching jar (shadow jar)
-      const jarFile = path.resolve(libsDir, jars[0])
-      fs.rename(jarFile, dest).then(resolve, reject)
-    }, reject)
+    // Multi-module projects emit their jar in a submodule's build/libs
+    if (candidates.length === 0) {
+      candidates = collectJars(filesDir)
+    }
+
+    if (candidates.length === 0) {
+      reject(new Error('No jar file found in build/libs/'))
+      return
+    }
+
+    // Prefer the largest jar (the shaded/plugin jar)
+    candidates.sort((a, b) => FileSystem.statSync(b).size - FileSystem.statSync(a).size)
+    fs.rename(candidates[0], dest).then(resolve, reject)
   })
 }
 
