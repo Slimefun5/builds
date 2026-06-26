@@ -56,9 +56,10 @@ function resolveSource (options, release) {
  * @return {Boolean}     Whether the project uses Gradle
  */
 function isGradleProject (job) {
-  const ktsFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle.kts')
-  const groovyFile = path.resolve(__dirname, '../' + job.directory + '/files/build.gradle')
-  return FileSystem.existsSync(ktsFile) || FileSystem.existsSync(groovyFile)
+  // Multi-module Gradle projects may only carry settings files at their root,
+  // so detection must cover both build and settings descriptors.
+  const candidates = ['build.gradle.kts', 'build.gradle', 'settings.gradle.kts', 'settings.gradle']
+  return candidates.some(name => FileSystem.existsSync(path.resolve(__dirname, '../' + job.directory + '/files/' + name)))
 }
 
 /**
