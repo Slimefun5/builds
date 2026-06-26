@@ -170,11 +170,24 @@ function check (job, logging) {
         job.id = id + 1
 
         // Decide whether to reuse a published release jar or compile from source.
-        // findReleaseJar never rejects (it resolves to null on any error).
+        // A release is only reused when it was built from this branch's current HEAD,
+        // so every branch always exposes a jar of its latest commit. findReleaseJar
+        // never rejects (it resolves to null on any error).
         release.findReleaseJar(job.author, job.repo, job.branch, process.env.ACCESS_TOKEN).then(found => {
-          job.release = found
-          job.source = resolveSource(job.options, found)
-          log(logging, '-> Source: ' + job.source + (found ? ' (release ' + found.tag + ')' : ''))
+          const mode = (job.options && job.options.source) || 'auto'
+          const atHead = !!(found && found.sha === job.commit.sha)
+
+          // 'release' forces reuse; 'auto' only reuses a release that matches HEAD
+          let chosen = null
+          if (mode === 'release') {
+            chosen = found
+          } else if (mode !== 'compile' && atHead) {
+            chosen = found
+          }
+
+          job.release = chosen
+          job.source = resolveSource(job.options, chosen)
+          log(logging, '-> Source: ' + job.source + (chosen ? ' (release ' + chosen.tag + ')' : ''))
           projects.clearWorkspace(job).then(resolve, reject)
         })
       }, reject)

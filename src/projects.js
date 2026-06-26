@@ -184,7 +184,11 @@ function addBuild (job, logging) {
       }
 
       log(logging, "-> Saving 'builds.json'...")
-      fs.writeFile(file, JSON.stringify(builds), 'utf8').then(resolve, reject)
+      // Ensure the branch directory exists (release-reuse skips the clone that would
+      // otherwise create it, and branch names may contain '/')
+      fs.mkdir(path.dirname(file), { recursive: true })
+        .then(() => fs.writeFile(file, JSON.stringify(builds), 'utf8'))
+        .then(resolve, reject)
     }
 
     log(logging, "-> Reading 'builds.json'...")
@@ -222,7 +226,10 @@ function generateHTML (job, logging) {
 
       log(logging, "-> Saving 'index.html'...")
 
-      fs.writeFile(path.resolve(__dirname, '../' + job.directory + '/index.html'), html, 'utf8').then(resolve, reject)
+      const file = path.resolve(__dirname, '../' + job.directory + '/index.html')
+      fs.mkdir(path.dirname(file), { recursive: true })
+        .then(() => fs.writeFile(file, html, 'utf8'))
+        .then(resolve, reject)
     }, reject)
   })
 }
@@ -250,7 +257,10 @@ function generateBadge (job, logging) {
 
       log(logging, "-> Saving 'badge.svg'...")
 
-      fs.writeFile(path.resolve(__dirname, '../' + job.directory + '/badge.svg'), svg, 'utf8').then(resolve, reject)
+      const file = path.resolve(__dirname, '../' + job.directory + '/badge.svg')
+      fs.mkdir(path.dirname(file), { recursive: true })
+        .then(() => fs.writeFile(file, svg, 'utf8'))
+        .then(resolve, reject)
     }, reject)
   })
 }
