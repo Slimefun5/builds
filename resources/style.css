@@ -515,3 +515,75 @@ a.build_child {
 .report_link:hover {
     color: var(--report-hover);
 }
+
+/* Landing page: one card per plugin, branches nested */
+.box_plugin {
+    margin: 2vh auto;
+}
+
+@media (min-width: 320px) {
+    .box_plugin {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1020px) {
+    .box_plugin {
+        width: 65%;
+    }
+}
+
+.plugin_icon {
+    filter: invert(1) brightness(0.9);
+    padding-bottom: 6px;
+    transform: scale(1.4) translate(-8px, 1px);
+    vertical-align: middle;
+}
+
+.branch_label {
+    width: 35%;
+}
+
+.prefix_tag {
+    background-color: var(--border);
+    border-radius: 4px;
+    color: var(--inactive-link-hover);
+    font-size: 75%;
+    margin-left: 8px;
+    padding: 1px 6px;
+    vertical-align: middle;
+}
+
+.branch_download {
+    text-align: left;
+    width: 35%;
+}
+
+.download_link {
+    color: var(--active-link);
+    white-space: nowrap;
+}
+
+.download_link:hover {
+    color: var(--active-link-hover);
+    text-decoration: underline;
+}
+
+.download_link .dl_icon {
+    filter: invert(1) brightness(0.95);
+    height: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.download_link span {
+    vertical-align: middle;
+}
+
+.download_none,
+.download_pending {
+    color: var(--inactive-link);
+    font-style: italic;
+}
