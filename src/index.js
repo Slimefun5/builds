@@ -1,10 +1,8 @@
 $(function() {
-    $.getJSON("/builds/resources/repos.json", repos => {
+    // index.json is the generated manifest: { "owner/repo": { owner, repository, abandoned, branches: [...] } }
+    $.getJSON("/builds/resources/index.json", plugins => {
         $("#repos").html("");
 
-        let plugins = groupByPlugin(repos);
-
-        // Living plugins first (alphabetical), fully abandoned plugins to the bottom
         let keys = Object.keys(plugins).sort((a, b) => sortPlugins(plugins[a], plugins[b]));
 
         for (let key of keys) {
@@ -14,43 +12,11 @@ $(function() {
     });
 });
 
-// Collapses the flat "owner/repo:branch" map into one entry per plugin (owner/repo)
-// with its branches nested, so each plugin is rendered exactly once.
-function groupByPlugin(repos) {
-    let plugins = {};
-
-    for (let repo in repos) {
-        let owner = repo.split("/")[0];
-        let repository = repo.split("/")[1].split(":")[0];
-        let branch = repo.split("/")[1].split(":")[1];
-        let key = `${owner}/${repository}`;
-
-        let directory = `${owner}/${repository}/${branch}`;
-        if (repos[repo].options && repos[repo].options.custom_directory) {
-            directory = repos[repo].options.custom_directory;
-        }
-
-        let abandoned = !!(repos[repo].options && repos[repo].options.abandoned);
-        let prefix = (repos[repo].options && repos[repo].options.prefix) || "DEV";
-
-        if (!plugins[key]) {
-            plugins[key] = { owner: owner, repository: repository, branches: [] };
-        }
-
-        plugins[key].branches.push({ branch: branch, directory: directory, abandoned: abandoned, prefix: prefix });
-    }
-
-    for (let key in plugins) {
-        plugins[key].branches.sort((a, b) => a.branch.toUpperCase() > b.branch.toUpperCase() ? 1 : -1);
-    }
-
-    return plugins;
-}
-
 function isAbandoned(plugin) {
-    return plugin.branches.every(branch => branch.abandoned);
+    return !!plugin.abandoned;
 }
 
+// Living plugins first (alphabetical), fully abandoned plugins to the bottom
 function sortPlugins(a, b) {
     if (isAbandoned(a) && !isAbandoned(b)) {
         return 1;
@@ -59,6 +25,19 @@ function sortPlugins(a, b) {
     } else {
         return a.repository.toUpperCase() > b.repository.toUpperCase() ? 1 : -1;
     }
+}
+
+// stable first, then experimental, then any other branch alphabetically
+function sortBranches(a, b) {
+    let order = {stable: 0, experimental: 1};
+    let weightA = order[a.branch] !== undefined ? order[a.branch] : 2;
+    let weightB = order[b.branch] !== undefined ? order[b.branch] : 2;
+
+    if (weightA !== weightB) {
+        return weightA - weightB;
+    }
+
+    return a.branch.toUpperCase() > b.branch.toUpperCase() ? 1 : -1;
 }
 
 function addPlugin(plugin) {
@@ -76,22 +55,24 @@ function addPlugin(plugin) {
 
     let table = $("#" + cardId);
 
-    for (let branch of plugin.branches) {
+    for (let branch of plugin.branches.slice().sort(sortBranches)) {
         addBranchRow(table, plugin, branch);
     }
 }
 
 function addBranchRow(table, plugin, branch) {
     let rowId = branch.directory.replace(/[^a-zA-Z0-9_]/g, "_");
+    let prefix = branch.prefix || branch.branch.toUpperCase();
+    let abandoned = isAbandoned(plugin);
 
     table.append(
-        `<tr class="branch_row ${branch.abandoned ? "abandoned" : "alive"}" project="${plugin.repository}:${branch.branch}">
+        `<tr class="branch_row ${abandoned ? "abandoned" : "alive"}" project="${plugin.repository}:${branch.branch}">
             <td class="icon">
                 <img alt="branch" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/git-branch.svg" />
             </td>
             <td class="branch_label">
-                <a class="link_info" href="${branch.directory}">${branch.branch}${branch.abandoned ? " [abandoned]" : ""}</a>
-                <span class="prefix_tag">${branch.prefix}</span>
+                <a class="link_info" href="${branch.directory}">${branch.branch}${abandoned ? " [abandoned]" : ""}</a>
+                <span class="prefix_tag">${prefix}</span>
             </td>
             <td class="branch_download" id="dl_${rowId}">
                 <span class="download_pending">…</span>

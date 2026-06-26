@@ -58,6 +58,7 @@ module.exports = (cfg) => {
 
     clone,
     pushChanges,
+    pushIndex,
     hasUpdate,
     parseDate
   }
@@ -313,6 +314,29 @@ function pushChanges (job, logging) {
         }, reject)
       }, reject)
     }, reject)
+  })
+}
+
+/**
+ * Commits and pushes the generated resources/index.json manifest to gh-pages.
+ * Resolves even when there is nothing to commit (the manifest was unchanged) or a
+ * git step fails, so finishing the run can never fail the workflow.
+ *
+ * @param  {Boolean} logging Whether the internal activity should be logged
+ * @return {Promise}         A promise that always resolves
+ */
+function pushIndex (logging) {
+  return new Promise((resolve) => {
+    const file = path.resolve(__dirname, '../resources/index.json')
+
+    process.spawn('git', ['add', file]).then(() => {
+      process.spawn('git', ['commit', '-m', 'Update project index']).then(() => {
+        process.spawn('git', ['push', 'origin', 'HEAD:gh-pages', '--force']).then(() => {
+          log(logging, "-> Pushed 'index.json'")
+          resolve()
+        }, resolve)
+      }, resolve) // 'git commit' fails when nothing changed - that is fine
+    }, resolve)
   })
 }
 

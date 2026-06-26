@@ -3,9 +3,8 @@
   "additionalProperties": false,
 
   "patternProperties": {
-    "^[A-Za-z0-9_-]+/[A-Za-z0-9_-]+:[A-Za-z0-9_-]+$": {
+    "^[A-Za-z0-9_-]+/[A-Za-z0-9_-]+(:[A-Za-z0-9_-]+)?$": {
       "type": "object",
-      "required": ["sonar", "options"],
       "additionalProperties": false,
 
       "properties": {
@@ -34,7 +33,6 @@
         },
         "options": {
           "type": "object",
-          "required": ["prefix"],
           "additionalProperties": false,
 
           "properties": {
@@ -52,19 +50,22 @@
             },
             "ignoreTags": {
               "type": "boolean"
+            },
+            "windowDays": {
+              "type": "integer"
             }
           }
         },
         "dependencies": {
           "type": "object",
-          
+
           "additionalProperties": {
             "type": "object",
             "additionalProperties": false,
 
             "patternProperties": {
               "^[0-9]+$": {
-                "type": "string"       
+                "type": "string"
               }
             }
           }

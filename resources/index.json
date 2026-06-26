@@ -1,0 +1,274 @@
+{
+  "Slimefun5/Slimefun5": {
+    "owner": "Slimefun5",
+    "repository": "Slimefun5",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/Slimefun5/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/Slimefun5/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/DynaTech": {
+    "owner": "Slimefun5",
+    "repository": "DynaTech",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/DynaTech/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/DynaTech/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/SlimeTinker": {
+    "owner": "Slimefun5",
+    "repository": "SlimeTinker",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SlimeTinker/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SlimeTinker/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/Networks": {
+    "owner": "Slimefun5",
+    "repository": "Networks",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/Networks/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/Networks/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/SlimefunAdvancements": {
+    "owner": "Slimefun5",
+    "repository": "SlimefunAdvancements",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SlimefunAdvancements/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SlimefunAdvancements/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/ExtraGear": {
+    "owner": "Slimefun5",
+    "repository": "ExtraGear",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/ExtraGear/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/ExtraGear/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/LuckyBlocks": {
+    "owner": "Slimefun5",
+    "repository": "LuckyBlocks",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/LuckyBlocks/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/LuckyBlocks/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/InfinityLib": {
+    "owner": "Slimefun5",
+    "repository": "InfinityLib",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/InfinityLib/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/InfinityLib/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/ExoticGarden": {
+    "owner": "Slimefun5",
+    "repository": "ExoticGarden",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/ExoticGarden/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/ExoticGarden/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/Galactifun": {
+    "owner": "Slimefun5",
+    "repository": "Galactifun",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/Galactifun/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/Galactifun/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/LiteXpansion": {
+    "owner": "Slimefun5",
+    "repository": "LiteXpansion",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/LiteXpansion/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/LiteXpansion/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/InfinityExpansion": {
+    "owner": "Slimefun5",
+    "repository": "InfinityExpansion",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/InfinityExpansion/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/InfinityExpansion/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/FluffyMachines": {
+    "owner": "Slimefun5",
+    "repository": "FluffyMachines",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/FluffyMachines/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/FluffyMachines/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/ChestTerminal": {
+    "owner": "Slimefun5",
+    "repository": "ChestTerminal",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/ChestTerminal/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/ChestTerminal/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/SensibleToolbox": {
+    "owner": "Slimefun5",
+    "repository": "SensibleToolbox",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SensibleToolbox/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SensibleToolbox/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  },
+  "Slimefun5/MissileWarfare": {
+    "owner": "Slimefun5",
+    "repository": "MissileWarfare",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/MissileWarfare/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/MissileWarfare/stable",
+        "prefix": "STABLE"
+      }
+    ]
+  }
+}

@@ -4,15 +4,66 @@ const path = require('path')
 
 const log = require('../src/logger.js')
 const lodash = require('lodash/lang')
+const branches = require('../src/branches.js')
 
 module.exports = {
   getProjects,
+  writeIndex,
   addBuild,
   generateHTML,
   generateBadge,
   clearWorkspace,
   clearFolder,
-  isValid
+  isValid,
+  prefixFor
+}
+
+/**
+ * Writes resources/index.json, the generated manifest the landing page reads to
+ * learn which plugins and branches exist. Grouped one entry per plugin (owner/repo).
+ *
+ * @param  {Array}   jobs     The expanded jobs for this run
+ * @param  {Boolean} logging  Whether the internal activity should be logged
+ * @return {Promise}          Resolves when the file has been written
+ */
+function writeIndex (jobs, logging) {
+  const index = {}
+
+  for (const job of jobs) {
+    const key = job.author + '/' + job.repo
+
+    if (!index[key]) {
+      index[key] = {
+        owner: job.author,
+        repository: job.repo,
+        abandoned: !!(job.options && job.options.abandoned),
+        branches: []
+      }
+    }
+
+    index[key].branches.push({
+      branch: job.branch,
+      directory: job.directory,
+      prefix: (job.options && job.options.prefix) || job.branch.toUpperCase()
+    })
+  }
+
+  log(logging, "-> Writing 'index.json'...")
+  return fs.writeFile(path.resolve(__dirname, '../resources/index.json'), JSON.stringify(index, null, 2), 'utf8')
+}
+
+/**
+ * Derives a build-name prefix for a branch. stable/experimental keep their
+ * conventional labels; any other branch uses an explicit fallback or its own name.
+ *
+ * @param  {String} branch    The branch name
+ * @param  {String} fallback  An optional configured prefix
+ * @return {String}           The prefix to use
+ */
+function prefixFor (branch, fallback) {
+  if (branch === 'stable') return 'STABLE'
+  if (branch === 'experimental') return 'EXP'
+  return fallback || branch.toUpperCase()
 }
 
 /**
@@ -21,41 +72,52 @@ module.exports = {
  * @param  {Boolean} logging Whether the internal activity should be logged
  * @return {Promise}         A Promise that resolves to an Array of Jobs
  */
-function getProjects (logging) {
-  return new Promise((resolve, reject) => {
-    fs.readFile(path.resolve(__dirname, '../resources/repos.json')).then((data) => {
-      const jobs = []
-      const json = JSON.parse(data)
+async function getProjects (logging) {
+  const data = await fs.readFile(path.resolve(__dirname, '../resources/repos.json'))
+  const json = JSON.parse(data)
+  const token = process.env.ACCESS_TOKEN
+  const jobs = []
 
-      for (const repo in json) {
-        log(logging, '-> Found Project "' + repo + '"')
+  for (const key in json) {
+    const entry = json[key]
+    const owner = key.split('/')[0]
+    const rest = key.split('/')[1]
+    const repo = rest.split(':')[0]
+    const explicitBranch = rest.split(':')[1]
 
-        const job = {
-          author: repo.split('/')[0],
-          repo: repo.split('/')[1].split(':')[0],
-          branch: repo.split('/')[1].split(':')[1]
-        }
+    let branchNames
+    if (explicitBranch) {
+      // Backward-compatible explicit single branch
+      log(logging, '-> Found Project "' + key + '"')
+      branchNames = [explicitBranch]
+    } else {
+      // Repo-level entry: discover which branches to build
+      log(logging, '-> Discovering branches for "' + key + '"')
+      branchNames = await branches.discoverBranches(owner, repo, entry.options, token)
+      log(logging, '-> ' + key + ' -> [' + branchNames.join(', ') + ']')
+    }
 
-        job.directory = job.author + '/' + job.repo + '/' + job.branch
+    const baseOptions = entry.options || {}
 
-        if (json[repo].options) {
-          job.options = json[repo].options
+    for (const branch of branchNames) {
+      const job = { author: owner, repo, branch }
+      job.directory = owner + '/' + repo + '/' + branch
+      job.options = Object.assign({}, baseOptions, { prefix: prefixFor(branch, baseOptions.prefix) })
 
-          if (json[repo].options.custom_directory) {
-            job.directory = json[repo].options.custom_directory
-          }
-        }
-
-        if (json[repo].sonar && json[repo].sonar.enabled) {
-          job.sonar = json[repo].sonar
-        }
-
-        jobs.push(job)
+      // A custom directory only makes sense for an explicit single-branch entry
+      if (explicitBranch && baseOptions.custom_directory) {
+        job.directory = baseOptions.custom_directory
       }
 
-      resolve(jobs)
-    }, reject)
-  })
+      if (entry.sonar && entry.sonar.enabled) {
+        job.sonar = entry.sonar
+      }
+
+      jobs.push(job)
+    }
+  }
+
+  return jobs
 }
 
 /**

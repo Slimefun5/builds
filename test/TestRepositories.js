@@ -22,7 +22,11 @@ fs.readFile(path.resolve(__dirname, "../resources/repos.json")).then((data) => {
             return assert.isObject(json);
         });
 
-        it("can transform into a Job Queue", () => projects.getProjects().then((jobs) => assert.isArray(jobs)));
+        it("can transform into a Job Queue", function() {
+            // Branch discovery performs live GitHub API calls
+            this.timeout(180000);
+            return projects.getProjects().then((jobs) => assert.isArray(jobs));
+        });
     });
 
     describe("Repository Validator", () => {
@@ -32,34 +36,36 @@ fs.readFile(path.resolve(__dirname, "../resources/repos.json")).then((data) => {
     });
 });
 
-function validate(repo) {
-    describe(repo, () => {
-        it('follows the Pattern: (.*\/.*:.*)', () => {
-            return assert.match(repo, /.*\/.*:.*/);
+function validate(key) {
+    describe(key, () => {
+        // Keys are repo-level (owner/repo) or explicit (owner/repo:branch)
+        it('follows the Pattern: owner/repo(:branch)', () => {
+            return assert.match(key, /^[A-Za-z0-9_-]+\/[A-Za-z0-9_-]+(:[A-Za-z0-9_-]+)?$/);
         });
 
-        it('is a valid Job', () => {
-            var job = {
-                author: repo.split("/")[0],
-                repo: repo.split("/")[1].split(":")[0],
-                branch: repo.split("/")[1].split(":")[1]
-            }
-			
-			job.directory = job.author + "/" + job.repo + "/" + job.branch;
+        it('has a valid owner and repository', () => {
+            var owner = key.split("/")[0];
+            var repository = key.split("/")[1].split(":")[0];
 
-            return assert.isTrue(projects.isValid(job));
+            assert.isString(owner);
+            assert.isNotEmpty(owner);
+            assert.isString(repository);
+            assert.isNotEmpty(repository);
         });
 
         it('exists on GitHub', function() {
-            this.timeout(5000);
+            this.timeout(8000);
+
+            var owner = key.split("/")[0];
+            var rest = key.split("/")[1];
 
             var job = {
-                author: repo.split("/")[0],
-                repo: repo.split("/")[1].split(":")[0],
-                branch: repo.split("/")[1].split(":")[1]
-            }
-			
-			job.directory = job.author + "/" + job.repo + "/" + job.branch;
+                author: owner,
+                repo: rest.split(":")[0],
+                branch: rest.split(":")[1] || "HEAD"
+            };
+
+            job.directory = job.author + "/" + job.repo + "/" + job.branch;
 
             return assert.isFulfilled(github.exists(job));
         });

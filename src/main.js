@@ -80,6 +80,9 @@ function start (logging) {
         updateStatus(jobs[index], 'Queued')
       }
 
+      // Generate the manifest the landing page reads (committed at the end of the run)
+      projects.writeIndex(jobs, logging).catch(error => log(logging, 'Failed to write index.json: ' + (error && error.message)))
+
       let i = -1
 
       const nextJob = () => {
@@ -87,32 +90,41 @@ function start (logging) {
 
         if (!global.status.running || i >= jobs.length) {
           log(logging, 'Finished!')
-          resolve()
-        } else {
-          log(logging, '')
-          log(logging, 'Watching: ' + jobs[i].author + '/' + jobs[i].repo + ':' + jobs[i].branch + ` (${i + 1} / ${jobs.length})`)
 
-          const job = jobs[i]
-
-          // Project Lifecycle. A failure in any stage is non-fatal: it is logged and
-          // the run continues with the next job, so a single broken repo can never
-          // abort the whole build (which previously caused failed-workflow emails).
-          check(job, logging)
-            .then(() => update(job, logging))
-            .then(() => compile(job, logging))
-            .then(() => gatherResources(job, logging))
-            .then(() => upload(job, logging))
-            .then(() => finish(job, logging))
-            .then(() => updateStatus(job, 'Finished'))
-            .then(nextJob, (error) => {
-              log(logging, '-> Skipping ' + job.author + '/' + job.repo + ':' + job.branch + ' - ' + (error && error.message))
-              updateStatus(job, 'Failed')
-              nextJob()
-            })
+          if (global.status.running) {
+            github.pushIndex(logging).then(resolve, resolve)
+          } else {
+            resolve()
+          }
+          return
         }
+
+        log(logging, '')
+        log(logging, 'Watching: ' + jobs[i].author + '/' + jobs[i].repo + ':' + jobs[i].branch + ` (${i + 1} / ${jobs.length})`)
+
+        const job = jobs[i]
+
+        // Project Lifecycle. A failure in any stage is non-fatal: it is logged and
+        // the run continues with the next job, so a single broken repo can never
+        // abort the whole build (which previously caused failed-workflow emails).
+        check(job, logging)
+          .then(() => update(job, logging))
+          .then(() => compile(job, logging))
+          .then(() => gatherResources(job, logging))
+          .then(() => upload(job, logging))
+          .then(() => finish(job, logging))
+          .then(() => updateStatus(job, 'Finished'))
+          .then(nextJob, (error) => {
+            log(logging, '-> Skipping ' + job.author + '/' + job.repo + ':' + job.branch + ' - ' + (error && error.message))
+            updateStatus(job, 'Failed')
+            nextJob()
+          })
       }
 
       nextJob()
+    }, (error) => {
+      log(logging, 'Failed to load projects: ' + (error && error.message))
+      resolve()
     })
   })
 }
