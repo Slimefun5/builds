@@ -4,14 +4,12 @@ $(() => {
     let repository = body.attr("repository");
     let branch = body.attr("branch");
 
-    $.getJSON("/builds/resources/repos.json", repos => {
-        let info = repos[`${owner}/${repository}:${branch}`];
-        let directory = `${owner}/${repository}/${branch}`;
-
-        // Override via custom directory option
-        if (info.options && info.options.custom_directory) {
-            directory = info.options.custom_directory;
-        }
+    // Read the generated manifest (repo-level entry -> its branches)
+    $.getJSON("/builds/resources/index.json", index => {
+        let info = index[`${owner}/${repository}`] || {};
+        let branchInfo = (info.branches || []).find(b => b.branch === branch) || {};
+        let directory = branchInfo.directory || `${owner}/${repository}/${branch}`;
+        let prefix = branchInfo.prefix || "DEV";
 
         createBadge(directory, "markdown");
         createBadge(directory, "html");
@@ -66,7 +64,6 @@ $(() => {
                 current_tag.attr("href", `https://github.com/${owner}/${repository}/releases/tag/${builds[id].tag}`);
                 current_tag.text(builds[id].tag);
             } else {
-                let prefix = info.options ? info.options.prefix : "DEV";
                 download_jar.text(`${repository} - ${prefix} ${id} (git ${builds[id].sha.substr(0, 5)}).jar`);
                 download_jar.attr("download", `${repository} - ${prefix} ${id} (git ${builds[id].sha.substr(0, 5)}).jar`);
 
