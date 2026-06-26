@@ -7,6 +7,7 @@ const cfg = require('../src/config.js')(path.resolve(__dirname, '../resources/co
 const projects = require('../src/projects.js')
 const maven = require('../src/maven.js')
 const gradle = require('../src/gradle.js')
+const release = require('../src/release.js')
 const github = require('../src/github.js')(cfg.github)
 const discord = require('../src/discord.js')(cfg.discord)
 const log = require('../src/logger.js')
@@ -19,6 +20,7 @@ module.exports = {
   gatherResources,
   upload,
   finish,
+  resolveSource,
 
   /**
      * This method returns the discord config used by this instance
@@ -26,6 +28,25 @@ module.exports = {
      * @return {Object} Config
      */
   getConfig: () => cfg
+}
+
+/**
+ * Decides whether a job should reuse a release jar or compile from source.
+ *
+ * 'auto' (the default when options.source is absent) reuses a release jar when one
+ * exists and compiles otherwise. 'release' and 'compile' force the respective mode.
+ *
+ * @param  {Object} options  The job's options object (may be undefined)
+ * @param  {Object|null} release  The result of release.findReleaseJar, or null
+ * @return {String}          'release' or 'compile'
+ */
+function resolveSource (options, release) {
+  const mode = (options && options.source) || 'auto'
+
+  if (mode === 'release') return 'release'
+  if (mode === 'compile') return 'compile'
+
+  return release ? 'release' : 'compile'
 }
 
 /**
@@ -72,20 +93,21 @@ function start (logging) {
 
           const job = jobs[i]
 
-          // Project Lifecycle
+          // Project Lifecycle. A failure in any stage is non-fatal: it is logged and
+          // the run continues with the next job, so a single broken repo can never
+          // abort the whole build (which previously caused failed-workflow emails).
           check(job, logging)
-            .then(() => update(job, logging)
-              .then(() => compile(job, logging)
-                .then(() => gatherResources(job, logging)
-                  .then(() => upload(job, logging)
-                    .then(() => finish(job, logging)
-                      .then(() => updateStatus(jobs[i], 'Finished'))
-                      .then(nextJob, reject),
-                    reject),
-                  reject),
-                reject),
-              reject),
-            nextJob)
+            .then(() => update(job, logging))
+            .then(() => compile(job, logging))
+            .then(() => gatherResources(job, logging))
+            .then(() => upload(job, logging))
+            .then(() => finish(job, logging))
+            .then(() => updateStatus(job, 'Finished'))
+            .then(nextJob, (error) => {
+              log(logging, '-> Skipping ' + job.author + '/' + job.repo + ':' + job.branch + ' - ' + (error && error.message))
+              updateStatus(job, 'Failed')
+              nextJob()
+            })
         }
       }
 
@@ -125,7 +147,7 @@ function check (job, logging) {
       job.commit = {
         sha: commit.sha,
         date: github.parseDate(commit.commit.committer.date),
-        timestamp: timestamp,
+        timestamp,
         message: commit.commit.message,
         author: commit.commit.author.name,
         avatar: (commit.author && commit.author.avatar_url) || ''
@@ -133,7 +155,15 @@ function check (job, logging) {
 
       github.hasUpdate(job, timestamp, logging).then(id => {
         job.id = id + 1
-        projects.clearWorkspace(job).then(resolve, reject)
+
+        // Decide whether to reuse a published release jar or compile from source.
+        // findReleaseJar never rejects (it resolves to null on any error).
+        release.findReleaseJar(job.author, job.repo, job.branch, process.env.ACCESS_TOKEN).then(found => {
+          job.release = found
+          job.source = resolveSource(job.options, found)
+          log(logging, '-> Source: ' + job.source + (found ? ' (release ' + found.tag + ')' : ''))
+          projects.clearWorkspace(job).then(resolve, reject)
+        })
       }, reject)
     }, reject)
   })
@@ -155,6 +185,11 @@ function update (job, logging) {
 
   if (!projects.isValid(job, false)) {
     return Promise.reject(new Error('Invalid Job!'))
+  }
+
+  // Reusing a release jar needs no source checkout
+  if (job.source === 'release' && job.release) {
+    return Promise.resolve()
   }
 
   updateStatus(job, 'Cloning Repository')
@@ -186,6 +221,12 @@ function compile (job, logging) {
 
   if (!projects.isValid(job, false)) {
     return Promise.reject(new Error('Invalid Job!'))
+  }
+
+  // Reusing a release jar needs no compilation; mark it as a successful build
+  if (job.source === 'release' && job.release) {
+    job.success = true
+    return Promise.resolve()
   }
 
   updateStatus(job, 'Compiling')
@@ -231,11 +272,17 @@ function gatherResources (job, logging) {
 
     const builder = isGradleProject(job) ? gradle : maven
 
-    Promise.all([
+    // Release builds have no compiled artifact to relocate
+    const tasks = [
       github.getLicense(job, logging),
-      github.getTags(job, logging),
-      builder.relocate(job)
-    ]).then((values) => {
+      github.getTags(job, logging)
+    ]
+
+    if (!(job.source === 'release' && job.release)) {
+      tasks.push(builder.relocate(job))
+    }
+
+    Promise.all(tasks).then((values) => {
       const license = values[0]
       const tags = values[1]
 

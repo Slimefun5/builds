@@ -109,8 +109,10 @@ function addBranchRow(table, plugin, branch) {
 
         if (id && builds[id]) {
             let label = (builds[id].candidate === "RELEASE" && builds[id].tag) ? builds[id].tag : `#${id}`;
+            // Release builds link directly to the published asset; compiled builds to the hosted jar
+            let href = builds[id].jarUrl || `${branch.directory}/${plugin.repository}-${id}.jar`;
             cell.html(
-                `<a class="download_link" href="${branch.directory}/${plugin.repository}-${id}.jar" download>
+                `<a class="download_link" href="${href}" download>
                     <img class="dl_icon" alt="download" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/desktop-download.svg" />
                     <span>Latest jar (${label})</span>
                 </a>`

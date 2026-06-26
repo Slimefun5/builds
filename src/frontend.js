@@ -49,7 +49,8 @@ $(() => {
 
             if (builds[id].status === "SUCCESS") {
                 $("#download_section").css("display", "");
-                download_jar.attr("href", `${repository}-${id}.jar`);
+                // Release builds link to the published asset; compiled builds to the hosted jar
+                download_jar.attr("href", builds[id].jarUrl || `${repository}-${id}.jar`);
             } else {
                 $("#download_section").css("display", "none");
             }

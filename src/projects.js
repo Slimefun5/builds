@@ -95,6 +95,13 @@ function addBuild (job, logging) {
         builds[job.id].status = 'COMPILE_ONLY'
       }
 
+      // A build reusing a published release links directly to that release asset
+      if (job.source === 'release' && job.release) {
+        builds[job.id].candidate = 'RELEASE'
+        builds[job.id].tag = job.release.tag
+        builds[job.id].jarUrl = job.release.jarUrl
+      }
+
       if (job.success) {
         builds.last_successful = job.id
       }
