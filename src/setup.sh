@@ -1,4 +1,4 @@
-git config user.name "TheBusyBot"
+git config user.name "Slimefun5 Builder"
 git config user.email ${LOGIN_EMAIL}
 
 git config --unset-all http.https://github.com/.extraheader || true
