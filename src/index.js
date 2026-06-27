@@ -74,6 +74,9 @@ function addBranchRow(table, plugin, branch) {
                 <a class="link_info" href="${branch.directory}">${branch.branch}${abandoned ? " [abandoned]" : ""}</a>
                 <span class="prefix_tag">${prefix}</span>
             </td>
+            <td class="branch_date" id="date_${rowId}">
+                <span class="download_pending">…</span>
+            </td>
             <td class="branch_download" id="dl_${rowId}">
                 <span class="download_pending">…</span>
             </td>
@@ -87,6 +90,11 @@ function addBranchRow(table, plugin, branch) {
     $.getJSON(`/builds/${branch.directory}/builds.json`, builds => {
         let id = builds.last_successful || builds.latest;
         let cell = $("#dl_" + rowId);
+
+        // Last commit date = the most recent build's commit date
+        let latest = builds.latest;
+        let date = (latest && builds[latest] && builds[latest].date) ? builds[latest].date : "—";
+        $("#date_" + rowId).text(date);
 
         if (id && builds[id]) {
             let label = (builds[id].candidate === "RELEASE" && builds[id].tag) ? builds[id].tag : `#${id}`;
@@ -103,5 +111,6 @@ function addBranchRow(table, plugin, branch) {
         }
     }).fail(() => {
         $("#dl_" + rowId).html(`<span class="download_none">no build yet</span>`);
+        $("#date_" + rowId).text("—");
     });
 }

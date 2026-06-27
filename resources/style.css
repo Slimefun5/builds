@@ -541,7 +541,14 @@ a.build_child {
 }
 
 .branch_label {
-    width: 35%;
+    width: 28%;
+}
+
+.branch_date {
+    color: var(--inactive-link-hover);
+    font-size: 90%;
+    white-space: nowrap;
+    width: 22%;
 }
 
 .prefix_tag {
@@ -556,7 +563,7 @@ a.build_child {
 
 .branch_download {
     text-align: left;
-    width: 35%;
+    width: 30%;
 }
 
 .download_link {
