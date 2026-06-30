@@ -1,0 +1,34 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/InfinityLib
+Download completed for dependency Slimefun5/InfinityLib
+Downloading dependency from Slimefun5/Slimefun5
+Download completed for dependency Slimefun5/Slimefun5
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':shadowJar'.
+> Could not resolve all dependencies for configuration ':runtimeClasspath'.
+   > Could not resolve com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT.
+     Required by:
+         root project 'SlimeTinker'
+      > Could not resolve com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT.
+         > Unable to load Maven meta-data from https://repo.papermc.io/repository/maven-public/com/github/Slimefun5/SlimefunMetrics/master-SNAPSHOT/maven-metadata.xml.
+            > Could not GET 'https://repo.papermc.io/repository/maven-public/com/github/Slimefun5/SlimefunMetrics/master-SNAPSHOT/maven-metadata.xml'. Received status code 502 from server: Bad Gateway
+   > Could not resolve co.aikar:acf-paper:0.5.1-SNAPSHOT.
+     Required by:
+         root project 'SlimeTinker'
+      > Could not resolve co.aikar:acf-paper:0.5.1-SNAPSHOT.
+         > Could not get resource 'https://repo.papermc.io/repository/maven-public/co/aikar/acf-paper/0.5.1-SNAPSHOT/acf-paper-0.5.1-20260511.221425-52.pom'.
+            > Could not GET 'https://repo.papermc.io/repository/maven-public/co/aikar/acf-paper/0.5.1-SNAPSHOT/acf-paper-0.5.1-20260511.221425-52.pom'. Received status code 502 from server: Bad Gateway
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 48s
