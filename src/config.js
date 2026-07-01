@@ -22,7 +22,13 @@ module.exports = file => {
   let cfg = {}
 
   if (file != 'null' && process.env.JSON_CONFIG) {
-    return structure(lodash.defaultsDeep(JSON.parse(process.env.JSON_CONFIG), defaultConfig))
+    let parsed = {}
+    try {
+      parsed = JSON.parse(process.env.JSON_CONFIG)
+    } catch (err) {
+      console.warn(`JSON_CONFIG is not valid JSON (${err.message}); falling back to defaults. It must be a single JSON object, e.g. { "discord": { "enabled": true, "id": "...", "token": "..." } }.`)
+    }
+    return structure(lodash.defaultsDeep(parsed, defaultConfig))
   }
 
   try {
