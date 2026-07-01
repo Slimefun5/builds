@@ -1,0 +1,182 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:2: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:3: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:5: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:6: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:8:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:2: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:3: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:5: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:6: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:10:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:55:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:55:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:55:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:2: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:3: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:5: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:6: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:56:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:57:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:57:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:57:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:2: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:3: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:5: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:6: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:59:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:76:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:76:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:94:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:94:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:98:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts:98:2: Unexpected tokens (use ';' to separate expressions on the same line)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/builds/builds/Slimefun5/ExoticGarden/stable/files/build.gradle.kts' line: 8
+
+* What went wrong:
+Script compilation errors:
+
+  Line 08: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 08: <<<<<<< HEAD
+            ^ Expecting an element
+
+  Line 08: <<<<<<< HEAD
+             ^ Expecting an element
+
+  Line 08: <<<<<<< HEAD
+              ^ Expecting an element
+
+  Line 08: <<<<<<< HEAD
+               ^ Expecting an element
+
+  Line 08: <<<<<<< HEAD
+                ^ Expecting an element
+
+  Line 08: <<<<<<< HEAD
+                 ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+            ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+             ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+              ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+               ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+                ^ Expecting an element
+
+  Line 10: <<<<<<< HEAD
+                 ^ Expecting an element
+
+  Line 55: =======
+           ^ Expecting an element
+
+  Line 55: =======
+              ^ Expecting an element
+
+  Line 55: =======
+                 ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+            ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+             ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+              ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+               ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+                ^ Expecting an element
+
+  Line 56: >>>>>>> origin/experimental
+                 ^ Expecting an element
+
+  Line 57: =======
+           ^ Expecting an element
+
+  Line 57: =======
+              ^ Expecting an element
+
+  Line 57: =======
+                 ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+            ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+             ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+              ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+               ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+                ^ Expecting an element
+
+  Line 59: >>>>>>> origin/experimental
+                 ^ Expecting an element
+
+  Line 76: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 76: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 94: =======
+           ^ Expecting an element
+
+  Line 94: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 98: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 98: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+40 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 11s
