@@ -1,0 +1,70 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:33:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:33:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:36:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:36:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:39:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:39:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:46:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:46:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:47:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:47:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:49:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts:49:2: Unexpected tokens (use ';' to separate expressions on the same line)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/builds/builds/Slimefun5/Galactifun/stable/files/build.gradle.kts' line: 33
+
+* What went wrong:
+Script compilation errors:
+
+
+           ^ Expecting an element
+
+  Line 33: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 36: =======
+  Line 33: <<<<<<< HEAD           ^ Expecting an element
+
+  Line 36: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 39: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 39: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 46: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 46: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 47: =======
+           ^ Expecting an element
+
+  Line 47: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 49: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 49: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+12 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10s
