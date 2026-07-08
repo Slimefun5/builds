@@ -2,6 +2,9 @@ const request = require('request-promise-native')
 
 const DAY_MS = 24 * 60 * 60 * 1000
 
+// Bot-created dependency-bump branches (dependabot/renovate) are never built or listed.
+const BOT_BRANCH = /^(?:dependabot|renovate)\//i
+
 /**
  * Performs an authenticated GitHub API request that resolves with parsed JSON.
  *
@@ -82,6 +85,10 @@ function selectBranches (info, now, windowDays) {
 
   for (const name of branches) {
     if (selected.includes(name) || name === 'stable' || name === 'experimental') {
+      continue
+    }
+
+    if (BOT_BRANCH.test(name)) {
       continue
     }
 
