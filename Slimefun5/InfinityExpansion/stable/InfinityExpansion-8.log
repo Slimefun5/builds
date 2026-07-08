@@ -1,0 +1,70 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:13:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:13:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:14:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:14:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:17:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:17:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:20:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:20:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:24:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:24:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:25:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts:25:2: Unexpected tokens (use ';' to separate expressions on the same line)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/builds/builds/Slimefun5/InfinityExpansion/stable/files/build.gradle.kts' line: 13
+
+* What went wrong:
+Script compilation errors:
+
+  Line 13: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 13: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 14: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 14: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 17: =======
+           ^ Expecting an element
+
+  Line 17: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 20: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 20: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 24: =======
+           ^ Expecting an element
+
+  Line 24: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 25: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 25: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+12 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10s
