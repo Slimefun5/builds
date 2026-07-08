@@ -1,18 +1,53 @@
 {
-    "Slimefun5/Slimefun5": { "options": {} },
-    "Slimefun5/DynaTech": { "options": {} },
-    "Slimefun5/SlimeTinker": { "options": {} },
-    "Slimefun5/Networks": { "options": {} },
-    "Slimefun5/SlimefunAdvancements": { "options": {} },
-    "Slimefun5/ExtraGear": { "options": {} },
-    "Slimefun5/LuckyBlocks": { "options": {} },
-    "Slimefun5/InfinityLib": { "options": {} },
-    "Slimefun5/ExoticGarden": { "options": {} },
-    "Slimefun5/Galactifun": { "options": {} },
-    "Slimefun5/LiteXpansion": { "options": {} },
-    "Slimefun5/InfinityExpansion": { "options": {} },
-    "Slimefun5/FluffyMachines": { "options": {} },
-    "Slimefun5/ChestTerminal": { "options": {} },
-    "Slimefun5/SensibleToolbox": { "options": {} },
-    "Slimefun5/MissileWarfare": { "options": {} }
+    "Slimefun5/Slimefun5": {
+        "options": {}
+    },
+    "Slimefun5/DynaTech": {
+        "options": {}
+    },
+    "Slimefun5/SlimeTinker": {
+        "options": {}
+    },
+    "Slimefun5/Networks": {
+        "options": {}
+    },
+    "Slimefun5/SlimefunAdvancements": {
+        "options": {}
+    },
+    "Slimefun5/ExtraGear": {
+        "options": {}
+    },
+    "Slimefun5/LuckyBlocks": {
+        "options": {}
+    },
+    "Slimefun5/InfinityLib": {
+        "options": {}
+    },
+    "Slimefun5/ExoticGarden": {
+        "options": {}
+    },
+    "Slimefun5/Galactifun": {
+        "options": {}
+    },
+    "Slimefun5/LiteXpansion": {
+        "options": {}
+    },
+    "Slimefun5/InfinityExpansion": {
+        "options": {}
+    },
+    "Slimefun5/FluffyMachines": {
+        "options": {}
+    },
+    "Slimefun5/ChestTerminal": {
+        "options": {}
+    },
+    "Slimefun5/SensibleToolbox": {
+        "options": {}
+    },
+    "Slimefun5/MissileWarfare": {
+        "options": {}
+    },
+    "Slimefun5/SoulJars": {
+        "options": {}
+    }
 }
