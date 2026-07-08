@@ -1,0 +1,190 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:13:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:13:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:15:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:15:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:17:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:17:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:18:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:18:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:20:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:20:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:21:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:21:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:22:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:22:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:24:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:24:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:25:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:25:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:27:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:27:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:45:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:45:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:46:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:46:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:51:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:51:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:53:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:53:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:55:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:55:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:56:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:56:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:58:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:58:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:59:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:59:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:61:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:61:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:73:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:73:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:75:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts:75:2: Unexpected tokens (use ';' to separate expressions on the same line)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/builds/builds/Slimefun5/LiteXpansion/stable/files/build.gradle.kts' line: 13
+
+* What went wrong:
+Script compilation errors:
+
+  Line 13: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 13: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 15: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 15: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 17: =======
+           ^ Expecting an element
+
+  Line 17: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 18: =======
+           ^ Expecting an element
+
+  Line 18: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 20: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 20: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 21: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 21: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 22: =======
+           ^ Expecting an element
+
+  Line 22: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 24: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 24: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 25: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 25: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 27: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 27: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 45: =======
+           ^ Expecting an element
+
+  Line 45: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 46: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 46: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 51: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 51: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 53: =======
+           ^ Expecting an element
+
+  Line 53: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 55: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 55: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 56: <<<<<<< HEAD
+           ^ Expecting an element
+
+  Line 56: <<<<<<< HEAD
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 58: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 58: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 59: =======
+           ^ Expecting an element
+
+  Line 59: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 61: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 61: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 73: =======
+           ^ Expecting an element
+
+  Line 73: =======
+              ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 75: >>>>>>> origin/experimental
+           ^ Expecting an element
+
+  Line 75: >>>>>>> origin/experimental
+            ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+42 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 9s
