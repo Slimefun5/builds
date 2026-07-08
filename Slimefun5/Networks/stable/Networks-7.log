@@ -1,0 +1,698 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:45:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:45:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:48:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:48:4: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:51:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:51:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:57:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:57:2: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:63:1: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:63:4: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:63:7: Expecting an element
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:64:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:2: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:3: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:6: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:15: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:65:16: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:67:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:67:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:68:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:68:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:16: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:26: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:28: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:29: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:69:34: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:70:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:71:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:71:22: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:22: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:23: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:24: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:34: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:35: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:72:37: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:13: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:19: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:20: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:21: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:28: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:30: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:33: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:73:47: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:74:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:75:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:76:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:76:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:77:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:77:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:77:19: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:78:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:79:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:79:15: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:2: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:3: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:6: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:80:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:2: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:3: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:6: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:81:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:24: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:25: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:28: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:29: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:30: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:40: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:42: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:49: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:50: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:57: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:58: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:62: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:82:63: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:83:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:83:24: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:83:25: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:83:26: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:83:37: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:83:38: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:84:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:84:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:84:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:24: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:25: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:28: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:29: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:30: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:59: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:85:60: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:86:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:86:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:86:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:24: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:25: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:28: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:29: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:30: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:39: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:40: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:54: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:58: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:87:59: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:2: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:3: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:6: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:15: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:88:16: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:89:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:89:16: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:89:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:89:18: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:89:29: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:89:30: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:1: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:2: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:3: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:4: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:6: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:7: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:15: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:90:16: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:91:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:92:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:92:11: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:93:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:93:18: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:93:19: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:93:28: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:94:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:95:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:95:21: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:96:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:96:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:96:19: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:97:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:98:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:98:10: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:99:9: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:99:17: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:99:19: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:100:5: Unexpected symbol
+e: file:///home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts:101:1: Unexpected symbol
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/builds/builds/Slimefun5/Networks/stable/files/build.gradle.kts' line: 45
+
+* What went wrong:
+Script compilation errors:
+
+  Line 045: <<<<<<< HEAD
+            ^ Expecting an element
+
+  Line 045: <<<<<<< HEAD
+             ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 048: =======
+            ^ Expecting an element
+
+  Line 048: =======
+               ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 051: >>>>>>> origin/experimental
+            ^ Expecting an element
+
+  Line 051: >>>>>>> origin/experimental
+             ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 057: <<<<<<< HEAD
+            ^ Expecting an element
+
+  Line 057: <<<<<<< HEAD
+             ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 063: =======
+            ^ Expecting an element
+
+  Line 063: =======
+               ^ Expecting an element
+
+  Line 063: =======
+                  ^ Expecting an element
+
+  Line 064: }
+            ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+            ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+             ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+              ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+               ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+                ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+                 ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+                  ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+                    ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+                          ^ Unexpected symbol
+
+  Line 065: >>>>>>> origin/experimental
+                           ^ Unexpected symbol
+
+  Line 067: tasks {
+            ^ Unexpected symbol
+
+  Line 067: tasks {
+                  ^ Unexpected symbol
+
+  Line 068:     compileJava {
+                ^ Unexpected symbol
+
+  Line 068:     compileJava {
+                            ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                    ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                           ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                            ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                                     ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                                       ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                                        ^ Unexpected symbol
+
+  Line 069:         options.encoding = "UTF-8"
+                                             ^ Unexpected symbol
+
+  Line 070:     }
+                ^ Unexpected symbol
+
+  Line 071:     processResources {
+                ^ Unexpected symbol
+
+  Line 071:     processResources {
+                                 ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                    ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                                 ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                                  ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                                   ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                                             ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                                              ^ Unexpected symbol
+
+  Line 072:         filesMatching("plugin.yml") {
+                                                ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                        ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                              ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                               ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                                ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                                       ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                                         ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                                            ^ Unexpected symbol
+
+  Line 073:             expand("version" to displayVersion)
+                                                          ^ Unexpected symbol
+
+  Line 074:         }
+                    ^ Unexpected symbol
+
+  Line 075:     }
+                ^ Unexpected symbol
+
+  Line 076:     jar {
+                ^ Unexpected symbol
+
+  Line 076:     jar {
+                    ^ Unexpected symbol
+
+  Line 077:         enabled = false
+                    ^ Unexpected symbol
+
+  Line 077:         enabled = false
+                            ^ Unexpected symbol
+
+  Line 077:         enabled = false
+                              ^ Unexpected symbol
+
+  Line 078:     }
+                ^ Unexpected symbol
+
+  Line 079:     shadowJar {
+                ^ Unexpected symbol
+
+  Line 079:     shadowJar {
+                          ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+            ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+             ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+              ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+               ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+                ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+                 ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+                  ^ Unexpected symbol
+
+  Line 080: <<<<<<< HEAD
+                    ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+            ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+             ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+              ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+               ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+                ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+                 ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+                  ^ Unexpected symbol
+
+  Line 081: <<<<<<< HEAD
+                    ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                    ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                   ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                    ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                       ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                        ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                         ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                   ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                     ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                            ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                             ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                                    ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                                     ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                                         ^ Unexpected symbol
+
+  Line 082:         archiveFileName.set("Networks v${project.version}.jar")
+                                                                          ^ Unexpected symbol
+
+  Line 083:                 exclude("META-INF/**")
+                            ^ Unexpected symbol
+
+  Line 083:                 exclude("META-INF/**")
+                                   ^ Unexpected symbol
+
+  Line 083:                 exclude("META-INF/**")
+                                    ^ Unexpected symbol
+
+  Line 083:                 exclude("META-INF/**")
+                                     ^ Unexpected symbol
+
+  Line 083:                 exclude("META-INF/**")
+                                                ^ Unexpected symbol
+
+  Line 083:                 exclude("META-INF/**")
+                                                 ^ Unexpected symbol
+
+  Line 084: =======
+            ^ Unexpected symbol
+
+  Line 084: =======
+               ^ Unexpected symbol
+
+  Line 084: =======
+                  ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                    ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                   ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                    ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                       ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                        ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                         ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                                                      ^ Unexpected symbol
+
+  Line 085:         archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
+                                                                       ^ Unexpected symbol
+
+  Line 086: =======
+            ^ Unexpected symbol
+
+  Line 086: =======
+               ^ Unexpected symbol
+
+  Line 086: =======
+                  ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                    ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                   ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                    ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                       ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                        ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                         ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                                  ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                                   ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                                                 ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                                                     ^ Unexpected symbol
+
+  Line 087:         archiveFileName.set("Networks-$displayVersion.jar")
+                                                                      ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+            ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+             ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+              ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+               ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+                ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+                 ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+                  ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+                    ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+                          ^ Unexpected symbol
+
+  Line 088: >>>>>>> origin/experimental
+                           ^ Unexpected symbol
+
+  Line 089:         exclude("META-INF/**")
+                    ^ Unexpected symbol
+
+  Line 089:         exclude("META-INF/**")
+                           ^ Unexpected symbol
+
+  Line 089:         exclude("META-INF/**")
+                            ^ Unexpected symbol
+
+  Line 089:         exclude("META-INF/**")
+                             ^ Unexpected symbol
+
+  Line 089:         exclude("META-INF/**")
+                                        ^ Unexpected symbol
+
+  Line 089:         exclude("META-INF/**")
+                                         ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+            ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+             ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+              ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+               ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+                ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+                 ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+                  ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+                    ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+                          ^ Unexpected symbol
+
+  Line 090: >>>>>>> origin/experimental
+                           ^ Unexpected symbol
+
+  Line 091:     }
+                ^ Unexpected symbol
+
+  Line 092:     build {
+                ^ Unexpected symbol
+
+  Line 092:     build {
+                      ^ Unexpected symbol
+
+  Line 093:         dependsOn(shadowJar)
+                    ^ Unexpected symbol
+
+  Line 093:         dependsOn(shadowJar)
+                             ^ Unexpected symbol
+
+  Line 093:         dependsOn(shadowJar)
+                              ^ Unexpected symbol
+
+  Line 093:         dependsOn(shadowJar)
+                                       ^ Unexpected symbol
+
+  Line 094:     }
+                ^ Unexpected symbol
+
+  Line 095:     compileTestJava {
+                ^ Unexpected symbol
+
+  Line 095:     compileTestJava {
+                                ^ Unexpected symbol
+
+  Line 096:         enabled = false
+                    ^ Unexpected symbol
+
+  Line 096:         enabled = false
+                            ^ Unexpected symbol
+
+  Line 096:         enabled = false
+                              ^ Unexpected symbol
+
+  Line 097:     }
+                ^ Unexpected symbol
+
+  Line 098:     test {
+                ^ Unexpected symbol
+
+  Line 098:     test {
+                     ^ Unexpected symbol
+
+  Line 099:         enabled = false
+                    ^ Unexpected symbol
+
+  Line 099:         enabled = false
+                            ^ Unexpected symbol
+
+  Line 099:         enabled = false
+                              ^ Unexpected symbol
+
+  Line 100:     }
+                ^ Unexpected symbol
+
+  Line 101: }
+            ^ Unexpected symbol
+
+169 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 11s
