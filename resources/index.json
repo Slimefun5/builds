@@ -367,21 +367,6 @@
         "prefix": "EXP"
       },
       {
-        "branch": "dependabot/gradle/com.gradleup.shadow-9.5.1",
-        "directory": "Slimefun5/SoulJars/dependabot/gradle/com.gradleup.shadow-9.5.1",
-        "prefix": "DEPENDABOT/GRADLE/COM.GRADLEUP.SHADOW-9.5.1"
-      },
-      {
-        "branch": "dependabot/gradle/gradle-wrapper-9.6.1",
-        "directory": "Slimefun5/SoulJars/dependabot/gradle/gradle-wrapper-9.6.1",
-        "prefix": "DEPENDABOT/GRADLE/GRADLE-WRAPPER-9.6.1"
-      },
-      {
-        "branch": "dependabot/gradle/io.github.intisy.github-gradle-1.8.4.1",
-        "directory": "Slimefun5/SoulJars/dependabot/gradle/io.github.intisy.github-gradle-1.8.4.1",
-        "prefix": "DEPENDABOT/GRADLE/IO.GITHUB.INTISY.GITHUB-GRADLE-1.8.4.1"
-      },
-      {
         "branch": "feature/java8-universal-jar",
         "directory": "Slimefun5/SoulJars/feature/java8-universal-jar",
         "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
