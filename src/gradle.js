@@ -73,14 +73,18 @@ function compile (job, cfg, logging) {
       // Hand the access token to Gradle as GH_TOKEN/GITHUB_TOKEN so the github-gradle plugin can
       // authenticate its GitHub API calls (resolving dependency release assets, e.g. Slimefun5/dough).
       // Unauthenticated, those calls hit HTTP 500 / the 60-req/hour limit and the compile fails.
-      const tokenEnv = process.env.ACCESS_TOKEN
-        ? { GH_TOKEN: process.env.ACCESS_TOKEN, GITHUB_TOKEN: process.env.ACCESS_TOKEN }
+      //
+      // NB: `process` here is child-process-promise (required at the top of this file), NOT Node's
+      // global, so its `.env` is undefined - read the real environment via globalThis.process.
+      const nodeEnv = globalThis.process.env
+      const tokenEnv = nodeEnv.ACCESS_TOKEN
+        ? { GH_TOKEN: nodeEnv.ACCESS_TOKEN, GITHUB_TOKEN: nodeEnv.ACCESS_TOKEN }
         : {}
 
       const compiler = process.spawn('./gradlew', ['build', '--no-daemon', '-x', 'test'], {
         cwd: cwd,
         shell: true,
-        env: { ...process.env, ...tokenEnv }
+        env: { ...nodeEnv, ...tokenEnv }
       })
 
       const logger = (data) => {
