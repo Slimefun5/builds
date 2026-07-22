@@ -1,0 +1,59 @@
+Downloading https://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.3.1!
+
+Here are the highlights of this release:
+ - Test reporting improvements
+ - Error and warning improvements
+ - Build authoring improvements
+
+For more details see https://docs.gradle.org/9.3.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :core
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-chat.jar, took 388 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-common.jar, took 162 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-config.jar, took 160 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-data.jar, took 152 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-inventories.jar, took 179 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-items.jar, took 178 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-protection.jar, took 150 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-recipes.jar, took 153 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-reflection.jar, took 239 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-scheduling.jar, took 157 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-updater.jar, took 168 ms
+
+> Task :stubs:compileJava
+> Task :stubs:processResources NO-SOURCE
+> Task :stubs:classes
+> Task :stubs:jar
+
+> Task :core:compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/Slimefun5/experimental/files/core/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/tools/ExplosiveTool.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :core:generateGithubDependencyMetadata
+> Task :core:processGitHubResources
+> Task :core:processResources
+> Task :core:classes
+> Task :core:jar SKIPPED
+
+> Task :core:shadowJar
+XSeries 26.x patch: rewrote XMaterial$Data version regex for non-1.x majors
+
+> Task :core:assemble
+> Task :core:check
+> Task :core:build
+> Task :stubs:assemble
+> Task :stubs:check
+> Task :stubs:build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Slimefun5/experimental/files/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 1m
+7 actionable tasks: 7 executed
