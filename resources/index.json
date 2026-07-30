@@ -179,11 +179,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/ExoticGarden/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/ExoticGarden/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -289,11 +284,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/ChestTerminal/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/ChestTerminal/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -311,11 +301,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/SensibleToolbox/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/SensibleToolbox/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -333,11 +318,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/MissileWarfare/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/MissileWarfare/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
