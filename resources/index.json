@@ -13,11 +13,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/Slimefun5/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/Slimefun5/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -213,11 +208,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/LiteXpansion/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/LiteXpansion/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
