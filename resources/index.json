@@ -157,11 +157,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/InfinityLib/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/InfinityLib/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -262,11 +257,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/FluffyMachines/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/FluffyMachines/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
