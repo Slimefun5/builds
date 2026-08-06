@@ -1,29 +1,62 @@
 :root {
-    --header: #1a1a1a;
-    --header-text: #fafafa;
-    --background: #343a40;
-    --dark-background: #232426;
-    --border: #2b2f32;
-    --shadow: #20292f;
-    --text: #e2e2e2;
-    --active-link: #76d1ff;
-    --active-link-hover: #00a9ff;
-    --secondary-link: #6bbfe9;
-    --secondary-link-hover: #4f9fc8;
-    --inactive-link: #778185;
-    --inactive-link-hover: #9ba6aa;
-    --table-primary: #363b3f;
-    --table-secondary: #2d3338;
-    --table-background: #222325;
-    --selected: #115304;
-    --report: #818181;
-    --report-hover: #a51313;
+    /* Shared Slimefun palette (matches the Wiki): light by default, dark below. */
+    --accent: #16a34a;
+    --accent-strong: #15803d;
+
+    --header: #ffffff;
+    --header-text: #18181b;
+    --background: #ffffff;
+    --dark-background: #ffffff;
+    --border: #e8e8ea;
+    --shadow: rgba(0, 0, 0, 0.06);
+    --text: #18181b;
+    --active-link: var(--accent);
+    --active-link-hover: var(--accent-strong);
+    --secondary-link: #18181b;
+    --secondary-link-hover: var(--accent);
+    --inactive-link: #6b7280;
+    --inactive-link-hover: #18181b;
+    --table-primary: #fafafa;
+    --table-secondary: #ffffff;
+    --table-background: #fafafa;
+    --selected: #dcfce7;
+    --release-a: #e9f9ee;
+    --release-b: #f2fbf5;
+    --report: #9ca3af;
+    --report-hover: #dc2626;
+    --console-bg: #15181a;
+    --console-fg: #d19a66;
+    --icon-filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --header: #0f1211;
+        --header-text: #e8eae9;
+        --background: #0f1211;
+        --dark-background: #131615;
+        --border: #242927;
+        --shadow: rgba(0, 0, 0, 0.5);
+        --text: #e8eae9;
+        --accent: #4ade80;
+        --accent-strong: #86efac;
+        --secondary-link: #e8eae9;
+        --inactive-link: #9aa0a6;
+        --inactive-link-hover: #e8eae9;
+        --table-primary: #171b19;
+        --table-secondary: #121513;
+        --table-background: #121513;
+        --selected: #14351f;
+        --release-a: #132b18;
+        --release-b: #0f2113;
+        --icon-filter: invert(1) brightness(0.95);
+    }
 }
 
 html, body {
     background-color: var(--background);
     color: var(--text);
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', system-ui, -apple-system, sans-serif;
     height: 100%;
     margin: 0;
     width: 100%;
@@ -168,7 +201,7 @@ svg {
 }
 
 .icon img {
-    filter: invert(1) brightness(0.95);
+    filter: var(--icon-filter);
     height: 20px;
     min-height: 20px;
     min-width: 20px;
@@ -206,7 +239,9 @@ tr:nth-child(odd) {
 
 .box {
     background-color: var(--dark-background);
-    box-shadow: 0 3px 6px var(--shadow);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px var(--shadow);
 }
 
 .box_user {
@@ -247,6 +282,7 @@ tr:nth-child(odd) {
 
 .header {
     background-color: var(--header);
+    border-bottom: 1px solid var(--border);
     display: table;
     height: 50px;
     margin-bottom: 10px;
@@ -318,11 +354,11 @@ tr:nth-child(odd) {
 }
 
 .release:nth-child(even) {
-    background-color: #1d471d;
+    background-color: var(--release-a);
 }
 
 .release:nth-child(odd) {
-    background-color: #123b12;
+    background-color: var(--release-b);
 }
 
 .build {
@@ -420,8 +456,8 @@ a.build_child {
 }
 
 .console {
-    background-color: rgb(35, 35, 35);
-    color: rgb(209, 154, 102);
+    background-color: var(--console-bg);
+    color: var(--console-fg);
     height: 99.5%;
     margin: auto;
     overflow-x: hidden;
@@ -438,7 +474,7 @@ a.build_child {
 }
 
 .profile_icon {
-    filter: invert(1) brightness(0.9);
+    filter: var(--icon-filter);
     padding-bottom: 6px;
     transform: scale(1.5) translate(-8px, 1px);
     vertical-align: middle;
@@ -475,14 +511,16 @@ a.build_child {
 }
 
 .header_icon {
-    filter: invert(1);
-    height: 50%;
+    height: 26px;
+    width: 26px;
+    border-radius: 5px;
     vertical-align: middle;
-    padding-bottom: 6px;
+    margin-right: 4px;
+    padding-bottom: 2px;
 }
 
 .back_arrow {
-    filter: invert(1);
+    filter: var(--icon-filter);
     height: 50%;
     vertical-align: middle;
     padding-bottom: 2px;
@@ -503,7 +541,8 @@ a.build_child {
 }
 
 .report_button img {
-    filter: invert(1) brightness(0.5);
+    filter: var(--icon-filter);
+    opacity: 0.55;
     min-height: 18px;
     min-width: 18px;
 }
@@ -514,83 +553,4 @@ a.build_child {
 
 .report_link:hover {
     color: var(--report-hover);
-}
-
-/* Landing page: one card per plugin, branches nested */
-.box_plugin {
-    margin: 2vh auto;
-}
-
-@media (min-width: 320px) {
-    .box_plugin {
-        width: 95%;
-    }
-}
-
-@media (min-width: 1020px) {
-    .box_plugin {
-        width: 65%;
-    }
-}
-
-.plugin_icon {
-    filter: invert(1) brightness(0.9);
-    padding-bottom: 6px;
-    transform: scale(1.4) translate(-8px, 1px);
-    vertical-align: middle;
-}
-
-.branch_label {
-    width: 28%;
-}
-
-.branch_date {
-    color: var(--inactive-link-hover);
-    font-size: 90%;
-    white-space: nowrap;
-    width: 22%;
-}
-
-.prefix_tag {
-    background-color: var(--border);
-    border-radius: 4px;
-    color: var(--inactive-link-hover);
-    font-size: 75%;
-    margin-left: 8px;
-    padding: 1px 6px;
-    vertical-align: middle;
-}
-
-.branch_download {
-    text-align: left;
-    width: 30%;
-}
-
-.download_link {
-    color: var(--active-link);
-    white-space: nowrap;
-}
-
-.download_link:hover {
-    color: var(--active-link-hover);
-    text-decoration: underline;
-}
-
-.download_link .dl_icon {
-    filter: invert(1) brightness(0.95);
-    height: 16px;
-    min-height: 16px;
-    min-width: 16px;
-    vertical-align: middle;
-    width: 16px;
-}
-
-.download_link span {
-    vertical-align: middle;
-}
-
-.download_none,
-.download_pending {
-    color: var(--inactive-link);
-    font-style: italic;
 }
