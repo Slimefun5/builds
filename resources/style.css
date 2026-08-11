@@ -246,6 +246,7 @@ tr:nth-child(odd) {
 
 .box_user {
     margin: 2vh auto;
+    max-width: 960px;
 }
 
 @media (min-width: 320px) {
