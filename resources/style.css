@@ -217,11 +217,17 @@ tr:nth-child(even) {
     width: 60%;
 }
 
+#repos.sf-grid {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+
 .sf-card.box_plugin {
     width: auto;
 }
 
-.sf-card .info_table {
+.sf-card .branch_list {
     margin-top: .7rem;
 }
 
@@ -242,26 +248,70 @@ tr:nth-child(even) {
     width: 18px;
 }
 
+/* Flex (not grid): only rows whose label can't share the line with its
+   meta group wrap to a second line, so short branch names stay inline. */
+.branch_row {
+    align-items: center;
+    border-top: solid 1px var(--border);
+    column-gap: .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 0;
+    row-gap: .2rem;
+}
+
+.branch_row:first-child {
+    border-top: none;
+}
+
+.branch_row:nth-child(even) {
+    background-color: var(--row-stripe);
+}
+
 .branch_label {
+    align-items: center;
+    display: flex;
+    flex: 1 1 160px;
+    gap: .4rem;
+    min-width: 0;
+}
+
+.branch_label a {
     font-weight: 600;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .prefix_tag {
     background: var(--accent-weak);
     border-radius: 999px;
     color: var(--accent);
+    flex: 0 0 auto;
     font-size: .72rem;
     font-weight: 700;
     letter-spacing: .03em;
-    margin-left: .5rem;
     padding: .1rem .5rem;
     text-transform: uppercase;
+}
+
+.branch_meta {
+    align-items: center;
+    column-gap: 1rem;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    row-gap: .3rem;
 }
 
 .branch_date,
 .branch_download {
     color: var(--muted);
     font-size: .85rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 

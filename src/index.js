@@ -49,41 +49,42 @@ function addPlugin(plugin) {
                 <img alt="repository" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/repo.svg" class="plugin_icon">
                 <span>${plugin.repository}</span>
             </a>
-            <table id="${cardId}" class="info_table"></table>
+            <div id="${cardId}" class="branch_list"></div>
         </div>`
     );
 
-    let table = $("#" + cardId);
+    let list = $("#" + cardId);
 
     for (let branch of plugin.branches.slice().sort(sortBranches)) {
-        addBranchRow(table, plugin, branch);
+        addBranchRow(list, plugin, branch);
     }
 }
 
-function addBranchRow(table, plugin, branch) {
+function addBranchRow(list, plugin, branch) {
     let rowId = branch.directory.replace(/[^a-zA-Z0-9_]/g, "_");
     let prefix = branch.prefix || branch.branch.toUpperCase();
     let abandoned = isAbandoned(plugin);
+    let label = `${branch.branch}${abandoned ? " [abandoned]" : ""}`;
 
-    table.append(
-        `<tr class="branch_row ${abandoned ? "abandoned" : "alive"}" project="${plugin.repository}:${branch.branch}">
-            <td class="icon">
+    list.append(
+        `<div class="branch_row ${abandoned ? "abandoned" : "alive"}" project="${plugin.repository}:${branch.branch}">
+            <div class="icon">
                 <img alt="branch" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/git-branch.svg" />
-            </td>
-            <td class="branch_label">
-                <a class="link_info" href="${branch.directory}">${branch.branch}${abandoned ? " [abandoned]" : ""}</a>
+            </div>
+            <div class="branch_label">
+                <a class="link_info" href="${branch.directory}" title="${label}">${label}</a>
                 <span class="prefix_tag">${prefix}</span>
-            </td>
-            <td class="branch_date" id="date_${rowId}">
-                <span class="download_pending">…</span>
-            </td>
-            <td class="branch_download" id="dl_${rowId}">
-                <span class="download_pending">…</span>
-            </td>
-            <td>
+            </div>
+            <div class="branch_meta">
+                <span class="branch_date" id="date_${rowId}">
+                    <span class="download_pending">…</span>
+                </span>
+                <span class="branch_download" id="dl_${rowId}">
+                    <span class="download_pending">…</span>
+                </span>
                 <img class="badge" alt="build badge" src="/builds/${branch.directory}/badge.svg" />
-            </td>
-        </tr>`
+            </div>
+        </div>`
     );
 
     // Resolve the latest jar from this branch's own builds.json (the per-project state file)
