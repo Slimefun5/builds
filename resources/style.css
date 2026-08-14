@@ -305,6 +305,24 @@ tr:nth-child(even) {
     row-gap: .3rem;
 }
 
+/* A nested flex container's hypothetical main size ignores its own
+   wrapping, so .branch_meta never yields the row on narrow viewports
+   unless forced onto its own line here. Ellipsis-truncation is also
+   dropped so the date/jar text stays fully readable instead of being cut. */
+@media (max-width: 560px) {
+    .branch_meta {
+        flex-basis: 100%;
+        justify-content: flex-start;
+    }
+
+    .branch_date,
+    .branch_download {
+        overflow: visible;
+        text-overflow: clip;
+        white-space: normal;
+    }
+}
+
 .branch_date,
 .branch_download {
     color: var(--muted);
