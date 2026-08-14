@@ -1,17 +1,29 @@
 {
-  "Slimefun5/Slimefun5": {
+  "Slimefun5/AdvancementAPI": {
     "owner": "Slimefun5",
-    "repository": "Slimefun5",
+    "repository": "AdvancementAPI",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "main",
+        "directory": "Slimefun5/AdvancementAPI/main",
+        "prefix": "MAIN"
+      }
+    ]
+  },
+  "Slimefun5/ChestTerminal": {
+    "owner": "Slimefun5",
+    "repository": "ChestTerminal",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/Slimefun5/stable",
+        "directory": "Slimefun5/ChestTerminal/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/Slimefun5/experimental",
+        "directory": "Slimefun5/ChestTerminal/experimental",
         "prefix": "EXP"
       }
     ]
@@ -38,69 +50,20 @@
       }
     ]
   },
-  "Slimefun5/SlimeTinker": {
+  "Slimefun5/ExoticGarden": {
     "owner": "Slimefun5",
-    "repository": "SlimeTinker",
+    "repository": "ExoticGarden",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/SlimeTinker/stable",
+        "directory": "Slimefun5/ExoticGarden/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/SlimeTinker/experimental",
+        "directory": "Slimefun5/ExoticGarden/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/SlimeTinker/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
-      }
-    ]
-  },
-  "Slimefun5/Networks": {
-    "owner": "Slimefun5",
-    "repository": "Networks",
-    "abandoned": false,
-    "branches": [
-      {
-        "branch": "stable",
-        "directory": "Slimefun5/Networks/stable",
-        "prefix": "STABLE"
-      },
-      {
-        "branch": "experimental",
-        "directory": "Slimefun5/Networks/experimental",
-        "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/Networks/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
-      }
-    ]
-  },
-  "Slimefun5/SlimefunAdvancements": {
-    "owner": "Slimefun5",
-    "repository": "SlimefunAdvancements",
-    "abandoned": false,
-    "branches": [
-      {
-        "branch": "stable",
-        "directory": "Slimefun5/SlimefunAdvancements/stable",
-        "prefix": "STABLE"
-      },
-      {
-        "branch": "experimental",
-        "directory": "Slimefun5/SlimefunAdvancements/experimental",
-        "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/SlimefunAdvancements/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -121,54 +84,59 @@
       }
     ]
   },
-  "Slimefun5/LuckyBlocks": {
+  "Slimefun5/FastMachines": {
     "owner": "Slimefun5",
-    "repository": "LuckyBlocks",
+    "repository": "FastMachines",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/LuckyBlocks/stable",
+        "directory": "Slimefun5/FastMachines/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/LuckyBlocks/experimental",
+        "directory": "Slimefun5/FastMachines/experimental",
         "prefix": "EXP"
       }
     ]
   },
-  "Slimefun5/InfinityLib": {
+  "Slimefun5/FluffyMachines": {
     "owner": "Slimefun5",
-    "repository": "InfinityLib",
+    "repository": "FluffyMachines",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/InfinityLib/stable",
+        "directory": "Slimefun5/FluffyMachines/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/InfinityLib/experimental",
+        "directory": "Slimefun5/FluffyMachines/experimental",
         "prefix": "EXP"
       }
     ]
   },
-  "Slimefun5/ExoticGarden": {
+  "Slimefun5/FoxyMachines": {
     "owner": "Slimefun5",
-    "repository": "ExoticGarden",
+    "repository": "FoxyMachines",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/ExoticGarden/stable",
+        "directory": "Slimefun5/FoxyMachines/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/ExoticGarden/experimental",
+        "directory": "Slimefun5/FoxyMachines/experimental",
         "prefix": "EXP"
+      },
+      {
+        "branch": "feature/java8-universal-jar",
+        "directory": "Slimefun5/FoxyMachines/feature/java8-universal-jar",
+        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -194,19 +162,19 @@
       }
     ]
   },
-  "Slimefun5/LiteXpansion": {
+  "Slimefun5/GeneticChickengineering": {
     "owner": "Slimefun5",
-    "repository": "LiteXpansion",
+    "repository": "GeneticChickengineering",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/LiteXpansion/stable",
+        "directory": "Slimefun5/GeneticChickengineering/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/LiteXpansion/experimental",
+        "directory": "Slimefun5/GeneticChickengineering/experimental",
         "prefix": "EXP"
       }
     ]
@@ -233,36 +201,109 @@
       }
     ]
   },
-  "Slimefun5/FluffyMachines": {
+  "Slimefun5/InfinityLib": {
     "owner": "Slimefun5",
-    "repository": "FluffyMachines",
+    "repository": "InfinityLib",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/FluffyMachines/stable",
+        "directory": "Slimefun5/InfinityLib/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/FluffyMachines/experimental",
+        "directory": "Slimefun5/InfinityLib/experimental",
         "prefix": "EXP"
       }
     ]
   },
-  "Slimefun5/ChestTerminal": {
+  "Slimefun5/LiteXpansion": {
     "owner": "Slimefun5",
-    "repository": "ChestTerminal",
+    "repository": "LiteXpansion",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/ChestTerminal/stable",
+        "directory": "Slimefun5/LiteXpansion/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/ChestTerminal/experimental",
+        "directory": "Slimefun5/LiteXpansion/experimental",
+        "prefix": "EXP"
+      }
+    ]
+  },
+  "Slimefun5/LuckyBlocks": {
+    "owner": "Slimefun5",
+    "repository": "LuckyBlocks",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/LuckyBlocks/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/LuckyBlocks/experimental",
+        "prefix": "EXP"
+      }
+    ]
+  },
+  "Slimefun5/MissileWarfare": {
+    "owner": "Slimefun5",
+    "repository": "MissileWarfare",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/MissileWarfare/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/MissileWarfare/experimental",
+        "prefix": "EXP"
+      }
+    ]
+  },
+  "Slimefun5/Networks": {
+    "owner": "Slimefun5",
+    "repository": "Networks",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/Networks/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/Networks/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "feature/java8-universal-jar",
+        "directory": "Slimefun5/Networks/feature/java8-universal-jar",
+        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
+      }
+    ]
+  },
+  "Slimefun5/SMG": {
+    "owner": "Slimefun5",
+    "repository": "SMG",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SMG/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SMG/experimental",
         "prefix": "EXP"
       }
     ]
@@ -284,20 +325,98 @@
       }
     ]
   },
-  "Slimefun5/MissileWarfare": {
+  "Slimefun5/SimpleUtils": {
     "owner": "Slimefun5",
-    "repository": "MissileWarfare",
+    "repository": "SimpleUtils",
     "abandoned": false,
     "branches": [
       {
         "branch": "stable",
-        "directory": "Slimefun5/MissileWarfare/stable",
+        "directory": "Slimefun5/SimpleUtils/stable",
         "prefix": "STABLE"
       },
       {
         "branch": "experimental",
-        "directory": "Slimefun5/MissileWarfare/experimental",
+        "directory": "Slimefun5/SimpleUtils/experimental",
         "prefix": "EXP"
+      },
+      {
+        "branch": "feature/java8-universal-jar",
+        "directory": "Slimefun5/SimpleUtils/feature/java8-universal-jar",
+        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
+      }
+    ]
+  },
+  "Slimefun5/SlimeTinker": {
+    "owner": "Slimefun5",
+    "repository": "SlimeTinker",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SlimeTinker/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SlimeTinker/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "feature/java8-universal-jar",
+        "directory": "Slimefun5/SlimeTinker/feature/java8-universal-jar",
+        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
+      }
+    ]
+  },
+  "Slimefun5/Slimefun5": {
+    "owner": "Slimefun5",
+    "repository": "Slimefun5",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/Slimefun5/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/Slimefun5/experimental",
+        "prefix": "EXP"
+      }
+    ]
+  },
+  "Slimefun5/SlimefunAdvancements": {
+    "owner": "Slimefun5",
+    "repository": "SlimefunAdvancements",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SlimefunAdvancements/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SlimefunAdvancements/experimental",
+        "prefix": "EXP"
+      },
+      {
+        "branch": "feature/java8-universal-jar",
+        "directory": "Slimefun5/SlimefunAdvancements/feature/java8-universal-jar",
+        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
+      }
+    ]
+  },
+  "Slimefun5/SlimefunMetrics": {
+    "owner": "Slimefun5",
+    "repository": "SlimefunMetrics",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "main",
+        "directory": "Slimefun5/SlimefunMetrics/main",
+        "prefix": "MAIN"
       }
     ]
   },
@@ -320,6 +439,23 @@
         "branch": "feature/java8-universal-jar",
         "directory": "Slimefun5/SoulJars/feature/java8-universal-jar",
         "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
+      }
+    ]
+  },
+  "Slimefun5/Supreme": {
+    "owner": "Slimefun5",
+    "repository": "Supreme",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/Supreme/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/Supreme/experimental",
+        "prefix": "EXP"
       }
     ]
   }
