@@ -94,4 +94,3 @@ function sendUpdate (webhook, job, cfg) {
     }).then(resolve, reject)
   })
 }
-

@@ -69,7 +69,7 @@ function compile (job, cfg, logging) {
     log(logging, "-> Executing 'chmod +x gradlew'")
 
     const chmod = process.spawn('chmod', ['+x', 'gradlew'], {
-      cwd: cwd,
+      cwd,
       shell: true
     })
 
@@ -88,7 +88,7 @@ function compile (job, cfg, logging) {
         : {}
 
       const compiler = process.spawn('./gradlew', ['build', '--no-daemon', '-x', 'test'], {
-        cwd: cwd,
+        cwd,
         shell: true,
         env: { ...nodeEnv, ...tokenEnv }
       })
