@@ -1,0 +1,61 @@
+name: Force Update Pages
+
+on:
+  # Manual only - this must never regenerate all ~1300 pages on a schedule
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+
+    name: Regenerate project pages from the current template
+    runs-on: ubuntu-latest
+    env:
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+    steps:
+    - name: Checking out Repository
+      uses: actions/checkout@v4.1.0
+      with:
+        ref: gh-pages
+
+    - name: Setting up node.js
+      uses: actions/setup-node@v3.8.1
+      with:
+        node-version: '16.6.0'
+
+    - name: Installing dependencies
+      run: npm install
+
+    - name: Setting up git environment
+      run: sh src/setup.sh
+      env:
+        LOGIN_EMAIL: ${{ secrets.LOGIN_EMAIL }}
+
+    - name: Regenerating project pages
+      run: node src/force-update.js
+
+    - name: Committing and pushing changes
+      run: |
+        git add -A
+
+        if git diff --cached --quiet; then
+          echo "No changes to commit."
+          exit 0
+        fi
+
+        git commit -m "chore(pages): regenerate project pages from current template"
+
+        for i in 1 2 3; do
+          if git push origin HEAD:gh-pages; then
+            exit 0
+          fi
+
+          echo "Push rejected, fetching and rebasing (attempt $i)..."
+          git fetch origin gh-pages
+          git rebase origin/gh-pages
+        done
+
+        exit 1
