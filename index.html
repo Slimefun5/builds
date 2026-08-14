@@ -5,31 +5,56 @@
     <title>Slimefun5 Builds</title>
     <link id="favicon" rel="shortcut icon" type="image/png" href="resources/logo.png">
 
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="resources/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="src/index.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <a class="link_main" href="https://github.com/Slimefun5/builds">
-            <img class="header_icon" alt="Slimefun" src="resources/logo.png">
-            <span>Slimefun5 Builds</span>
-        </a>
-    </div>
+    <!-- sf:header -->
+<header class="sf-header">
+  <a class="sf-brand" href="https://slimefun5.github.io/">
+    <img src="https://github.com/Slimefun5.png" alt="Slimefun5" width="36" height="36">
+    <span>Slimefun<strong>5</strong></span>
+  </a>
+  <nav class="sf-links">
+    <a href="https://slimefun5.github.io/wiki/">Wiki</a>
+    <a href="https://slimefun5.github.io/builds/">Builds</a>
+    <a href="https://slimefun5.github.io/javadoc/">Javadocs</a>
+    <a href="https://github.com/Slimefun5">GitHub</a>
+  </nav>
+</header>
+    <!-- sf:header:end -->
 
-    <div id="repos">
-        <div class="box repo">
-            <div style="width: 100%; text-align: center;">
-                <img style="width: 30%;" class="loading" alt="loading" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/sync.svg" />
+    <main class="sf-main">
+        <h1>Builds</h1>
+        <p class="sf-lede">Automated development and release builds for every Slimefun5 project, refreshed every 30 minutes.</p>
+
+        <div class="sf-group">Projects</div>
+        <div id="repos" class="sf-grid">
+            <div class="box repo">
+                <div style="width: 100%; text-align: center;">
+                    <img style="width: 30%;" class="loading" alt="loading" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/sync.svg" />
+                </div>
             </div>
         </div>
-    </div>
-    
-    <p>&nbsp;</p>
+    </main>
+
+    <!-- sf:footer -->
+<footer class="sf-footer">
+  Slimefun5 is a community fork of Slimefun. Licensed
+  <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a>.
+  <nav class="sf-links">
+    <a href="https://slimefun5.github.io/wiki/">Wiki</a>
+    <a href="https://slimefun5.github.io/builds/">Builds</a>
+    <a href="https://slimefun5.github.io/javadoc/">Javadocs</a>
+    <a href="https://github.com/Slimefun5">GitHub</a>
+  </nav>
+</footer>
+    <!-- sf:footer:end -->
 </body>
 
 </html>
-

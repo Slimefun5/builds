@@ -44,8 +44,8 @@ function addPlugin(plugin) {
     let cardId = `plugin_${plugin.owner}_${plugin.repository}`.replace(/[^a-zA-Z0-9_]/g, "_");
 
     $("#repos").append(
-        `<div class="box box_plugin ${isAbandoned(plugin) ? "abandoned" : "alive"}">
-            <a class="link_repo" href="https://github.com/${plugin.owner}/${plugin.repository}">
+        `<div class="sf-card box_plugin ${isAbandoned(plugin) ? "abandoned" : "alive"}">
+            <a class="link_repo sf-card-title" href="https://github.com/${plugin.owner}/${plugin.repository}">
                 <img alt="repository" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/repo.svg" class="plugin_icon">
                 <span>${plugin.repository}</span>
             </a>
