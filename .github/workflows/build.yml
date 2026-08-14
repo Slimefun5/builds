@@ -43,6 +43,9 @@ jobs:
       env:
         LOGIN_EMAIL: ${{ secrets.LOGIN_EMAIL }}
 
+    - name: Regenerating repos.json from the addon manifest
+      run: node src/generate-repos.js
+
     - name: Running builds program
       run: node src/single-run.js
       env:
