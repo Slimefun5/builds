@@ -127,11 +127,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/FoxyMachines/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/FoxyMachines/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -149,11 +144,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/Galactifun/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/Galactifun/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
@@ -324,11 +314,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/SimpleUtils/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/SimpleUtils/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
