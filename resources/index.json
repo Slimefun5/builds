@@ -42,11 +42,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/DynaTech/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/DynaTech/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
