@@ -419,11 +419,6 @@
         "branch": "experimental",
         "directory": "Slimefun5/SoulJars/experimental",
         "prefix": "EXP"
-      },
-      {
-        "branch": "feature/java8-universal-jar",
-        "directory": "Slimefun5/SoulJars/feature/java8-universal-jar",
-        "prefix": "FEATURE/JAVA8-UNIVERSAL-JAR"
       }
     ]
   },
