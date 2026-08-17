@@ -351,6 +351,23 @@
       }
     ]
   },
+  "Slimefun5/SlimefunAdvancements": {
+    "owner": "Slimefun5",
+    "repository": "SlimefunAdvancements",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SlimefunAdvancements/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SlimefunAdvancements/experimental",
+        "prefix": "EXP"
+      }
+    ]
+  },
   "Slimefun5/SlimefunMetrics": {
     "owner": "Slimefun5",
     "repository": "SlimefunMetrics",
