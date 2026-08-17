@@ -380,6 +380,23 @@
       }
     ]
   },
+  "Slimefun5/SoulJars": {
+    "owner": "Slimefun5",
+    "repository": "SoulJars",
+    "abandoned": false,
+    "branches": [
+      {
+        "branch": "stable",
+        "directory": "Slimefun5/SoulJars/stable",
+        "prefix": "STABLE"
+      },
+      {
+        "branch": "experimental",
+        "directory": "Slimefun5/SoulJars/experimental",
+        "prefix": "EXP"
+      }
+    ]
+  },
   "Slimefun5/Supreme": {
     "owner": "Slimefun5",
     "repository": "Supreme",
