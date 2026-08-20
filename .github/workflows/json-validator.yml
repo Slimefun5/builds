@@ -1,6 +1,7 @@
 name: Validate repos.json
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - gh-pages

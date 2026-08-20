@@ -1,6 +1,7 @@
 name: Code Formatter
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - gh-pages

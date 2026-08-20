@@ -1,6 +1,7 @@
 name: Minifier
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - gh-pages

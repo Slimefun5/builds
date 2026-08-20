@@ -1,5 +1,6 @@
 name: Sonarcloud Scanner
 on:
+  workflow_dispatch:
   push:
     branches:
     - gh-pages
