@@ -1,0 +1,48 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :core
+w: file:///home/runner/work/builds/builds/Slimefun5/Slimefun5/experimental/files/core/build.gradle.kts:1058:28: 'fun buildFinished(action: Action<in BuildResult>): Unit' is deprecated. Deprecated in Java.
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-chat.jar, took 327 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-common.jar, took 126 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-config.jar, took 128 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-data.jar, took 128 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-inventories.jar, took 133 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-items.jar, took 119 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-protection.jar, took 124 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-recipes.jar, took 134 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-reflection.jar, took 138 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-scheduling.jar, took 198 ms
+Download https://github.com/Slimefun5/dough/releases/download/4.0.6/dough-updater.jar, took 130 ms
+
+> Task :stubs:compileJava
+> Task :stubs:processResources NO-SOURCE
+> Task :stubs:classes
+> Task :stubs:jar
+
+> Task :core:compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/Slimefun5/experimental/files/core/src/main/java/io/github/thebusybiscuit/slimefun5/implementation/items/tools/ExplosiveTool.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :core:generateGithubDependencyMetadata
+> Task :core:processGitHubResources
+> Task :core:processResources
+> Task :core:classes
+> Task :core:jar SKIPPED
+
+> Task :core:shadowJar
+XSeries 26.x patch: rewrote XMaterial$Data version regex for non-1.x majors
+
+> Task :core:assemble
+> Task :core:check
+> Task :core:build
+> Task :stubs:assemble
+> Task :stubs:check
+> Task :stubs:build
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Slimefun5/experimental/files/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 48s
+7 actionable tasks: 7 executed
