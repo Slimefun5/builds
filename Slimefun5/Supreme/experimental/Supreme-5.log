@@ -1,0 +1,40 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/Slimefun5
+Download completed for dependency Slimefun5/Slimefun5
+
+> Task :compileJava
+cannot find symbol
+  symbol: method optOutOfHeaderItem()
+cannot find symbol
+  symbol: method optOutOfHeaderItem()
+cannot find symbol
+  symbol:   method optOutOfHeaderItem()
+  location: class com.github.relativobr.supreme.libs.guizhanlib.slimefun.machines.MenuBlockPreset
+Some input files use or override a deprecated API.
+Recompile with -Xlint:deprecation for details.
+Some input files use unchecked or unsafe operations.
+Recompile with -Xlint:unchecked for details.
+3 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Supreme/experimental/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  cannot find symbol
+    symbol: method optOutOfHeaderItem()
+  3 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 18s
+1 actionable task: 1 executed
