@@ -1,0 +1,46 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/machine/Recycler.java:79: error: cannot find symbol
+            blockMenuPreset.optOutOfHeaderItem(ChatColor.DARK_GRAY);
+                           ^
+  symbol:   method optOutOfHeaderItem(org.bukkit.ChatColor)
+  location: variable blockMenuPreset of type me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/extrautils/interfaces/InventoryBlock.java:52: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/machine/MassFabricator.java:81: error: cannot find symbol
+            blockMenuPreset.optOutOfHeaderItem(ChatColor.DARK_PURPLE);
+                           ^
+  symbol:   method optOutOfHeaderItem(org.bukkit.ChatColor)
+  location: variable blockMenuPreset of type me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/utils/Reflections.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/LiteXpansion/experimental/files/src/main/java/dev/j3fftw/litexpansion/machine/Recycler.java:79: error: cannot find symbol
+              blockMenuPreset.optOutOfHeaderItem(ChatColor.DARK_GRAY);
+                             ^
+    symbol:   method optOutOfHeaderItem(org.bukkit.ChatColor)
+    location: variable blockMenuPreset of type me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset
+  3 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 14s
+1 actionable task: 1 executed
