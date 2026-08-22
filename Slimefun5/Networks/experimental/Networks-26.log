@@ -1,0 +1,95 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkDirectional.java:181: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkImport.java:94: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkExport.java:128: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkVacuum.java:133: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkWirelessTransmitter.java:188: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkWirelessReceiver.java:97: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkPurger.java:126: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/grid/NetworkGrid.java:57: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/grid/NetworkCraftingGrid.java:85: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkCell.java:46: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkGreedyBlock.java:59: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkQuantumWorkbench.java:80: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkQuantumStorage.java:329: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkPowerDisplay.java:86: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkEncoder.java:77: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+/home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkAutoCrafter.java:248: error: cannot find symbol
+                optOutOfHeaderItem();
+                ^
+  symbol: method optOutOfHeaderItem()
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/utils/ParticleCompat.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+16 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/Networks/experimental/files/src/main/java/io/github/sefiraat/networks/slimefun/network/NetworkDirectional.java:181: error: cannot find symbol
+                  optOutOfHeaderItem();
+                  ^
+    symbol: method optOutOfHeaderItem()
+  16 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 19s
+1 actionable task: 1 executed
