@@ -1,161 +1,161 @@
 {
-    "Slimefun5/DynaTech:experimental":  {
+    "Slimefun5/DynaTech:development":  {
                                             "options":  {
                                                             "prefix":  "EXP"
                                                         }
                                         },
-    "Slimefun5/SlimeTinker:stable":  {
+    "Slimefun5/SlimeTinker:main":  {
                                          "options":  {
                                                          "prefix":  "STABLE"
                                                      }
                                      },
-    "Slimefun5/Networks:experimental":  {
+    "Slimefun5/Networks:development":  {
                                             "options":  {
                                                             "prefix":  "EXP"
                                                         }
                                         },
-    "Slimefun5/SlimefunAdvancements:experimental":  {
+    "Slimefun5/SlimefunAdvancements:development":  {
                                                         "options":  {
                                                                         "prefix":  "EXP"
                                                                     }
                                                     },
-    "Slimefun5/DynaTech:stable":  {
+    "Slimefun5/DynaTech:main":  {
                                       "options":  {
                                                       "prefix":  "STABLE"
                                                   }
                                   },
-    "Slimefun5/ExtraGear:stable":  {
+    "Slimefun5/ExtraGear:main":  {
                                        "options":  {
                                                        "prefix":  "STABLE"
                                                    }
                                    },
-    "Slimefun5/LuckyBlocks:experimental":  {
+    "Slimefun5/LuckyBlocks:development":  {
                                                "options":  {
                                                                "prefix":  "EXP"
                                                            }
                                            },
-    "Slimefun5/InfinityLib:stable":  {
+    "Slimefun5/InfinityLib:main":  {
                                          "options":  {
                                                          "prefix":  "STABLE"
                                                      }
                                      },
-    "Slimefun5/ExoticGarden:experimental":  {
+    "Slimefun5/ExoticGarden:development":  {
                                                 "options":  {
                                                                 "prefix":  "EXP"
                                                             }
                                             },
-    "Slimefun5/InfinityLib:experimental":  {
+    "Slimefun5/InfinityLib:development":  {
                                                "options":  {
                                                                "prefix":  "EXP"
                                                            }
                                            },
-    "Slimefun5/Slimefun5:stable":  {
+    "Slimefun5/Slimefun5:main":  {
                                        "options":  {
                                                        "prefix":  "STABLE"
                                                    }
                                    },
 
-    "Slimefun5/Galactifun:experimental":  {
+    "Slimefun5/Galactifun:development":  {
                                               "options":  {
                                                               "prefix":  "EXP"
                                                           }
                                           },
-    "Slimefun5/LiteXpansion:stable":  {
+    "Slimefun5/LiteXpansion:main":  {
                                           "options":  {
                                                           "prefix":  "STABLE"
                                                       }
                                       },
-    "Slimefun5/InfinityExpansion:experimental":  {
+    "Slimefun5/InfinityExpansion:development":  {
                                                      "options":  {
                                                                      "prefix":  "EXP"
                                                                  }
                                                  },
-    "Slimefun5/Galactifun:stable":  {
+    "Slimefun5/Galactifun:main":  {
                                         "options":  {
                                                         "prefix":  "STABLE"
                                                     }
                                     },
-    "Slimefun5/SlimefunAdvancements:stable":  {
+    "Slimefun5/SlimefunAdvancements:main":  {
                                                   "options":  {
                                                                   "prefix":  "STABLE"
                                                               }
                                               },
-    "Slimefun5/FluffyMachines:experimental":  {
+    "Slimefun5/FluffyMachines:development":  {
                                                   "options":  {
                                                                   "prefix":  "EXP"
                                                               }
                                               },
-    "Slimefun5/ChestTerminal:experimental":  {
+    "Slimefun5/ChestTerminal:development":  {
                                                  "options":  {
                                                                  "prefix":  "EXP"
                                                              }
                                              },
-    "Slimefun5/InfinityExpansion:stable":  {
+    "Slimefun5/InfinityExpansion:main":  {
                                                "options":  {
                                                                "prefix":  "STABLE"
                                                            }
                                            },
-    "Slimefun5/Networks:stable":  {
+    "Slimefun5/Networks:main":  {
                                       "options":  {
                                                       "prefix":  "STABLE"
                                                   }
                                   },
-    "Slimefun5/SlimeTinker:experimental":  {
+    "Slimefun5/SlimeTinker:development":  {
                                                "options":  {
                                                                "prefix":  "EXP"
                                                            }
                                            },
-    "Slimefun5/ChestTerminal:stable":  {
+    "Slimefun5/ChestTerminal:main":  {
                                            "options":  {
                                                            "prefix":  "STABLE"
                                                        }
                                        },
-    "Slimefun5/MissileWarfare:experimental":  {
+    "Slimefun5/MissileWarfare:development":  {
                                                   "options":  {
                                                                   "prefix":  "EXP"
                                                               }
                                               },
-    "Slimefun5/ExoticGarden:stable":  {
+    "Slimefun5/ExoticGarden:main":  {
                                           "options":  {
                                                           "prefix":  "STABLE"
                                                       }
                                       },
-    "Slimefun5/SensibleToolbox:stable":  {
+    "Slimefun5/SensibleToolbox:main":  {
                                              "options":  {
                                                              "prefix":  "STABLE"
                                                          }
                                          },
-    "Slimefun5/Slimefun5:experimental":  {
+    "Slimefun5/Slimefun5:development":  {
                                              "options":  {
                                                              "prefix":  "EXP"
                                                          }
                                          },
-    "Slimefun5/FluffyMachines:stable":  {
+    "Slimefun5/FluffyMachines:main":  {
                                             "options":  {
                                                             "prefix":  "STABLE"
                                                         }
                                         },
-    "Slimefun5/ExtraGear:experimental":  {
+    "Slimefun5/ExtraGear:development":  {
                                              "options":  {
                                                              "prefix":  "EXP"
                                                          }
                                          },
-    "Slimefun5/LiteXpansion:experimental":  {
+    "Slimefun5/LiteXpansion:development":  {
                                                 "options":  {
                                                                 "prefix":  "EXP"
                                                             }
                                             },
-    "Slimefun5/LuckyBlocks:stable":  {
+    "Slimefun5/LuckyBlocks:main":  {
                                          "options":  {
                                                          "prefix":  "STABLE"
                                                      }
                                      },
-    "Slimefun5/SensibleToolbox:experimental":  {
+    "Slimefun5/SensibleToolbox:development":  {
                                                    "options":  {
                                                                    "prefix":  "EXP"
                                                                }
                                                },
-    "Slimefun5/MissileWarfare:stable":  {
+    "Slimefun5/MissileWarfare:main":  {
                                             "options":  {
                                                             "prefix":  "STABLE"
                                                         }
