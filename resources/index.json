@@ -7,7 +7,7 @@
       {
         "branch": "main",
         "directory": "Slimefun5/AdvancementAPI/main",
-        "prefix": "MAIN"
+        "prefix": "STABLE"
       }
     ]
   },
@@ -376,7 +376,7 @@
       {
         "branch": "main",
         "directory": "Slimefun5/SlimefunMetrics/main",
-        "prefix": "MAIN"
+        "prefix": "STABLE"
       }
     ]
   },
