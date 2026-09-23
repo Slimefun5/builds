@@ -50,9 +50,9 @@ async function getCommitDate (owner, repo, branch, token) {
 }
 
 /**
- * Pure branch-selection rule. Always keeps the default branch; keeps stable and
- * experimental when present; keeps any other branch whose latest commit is within
- * the recency window OR newer than experimental's latest commit.
+ * Pure branch-selection rule. Always keeps the default branch; keeps main and
+ * development when present; keeps any other branch whose latest commit is within
+ * the recency window OR newer than development's latest commit.
  *
  * @param  {Object} info        { defaultBranch, branches: [name], dates: { name: ISO } }
  * @param  {Number} now         Current time in ms
@@ -72,8 +72,8 @@ function selectBranches (info, now, windowDays) {
   }
 
   // Always-included branches, in a stable order
-  keep('stable')
-  keep('experimental')
+  keep('main')
+  keep('development')
 
   // The default branch is always built, even if it is none of the above
   if (info.defaultBranch && !selected.includes(info.defaultBranch)) {
@@ -81,10 +81,10 @@ function selectBranches (info, now, windowDays) {
   }
 
   const cutoff = now - window * DAY_MS
-  const expDate = dates.experimental ? new Date(dates.experimental).getTime() : null
+  const developmentDate = dates.development ? new Date(dates.development).getTime() : null
 
   for (const name of branches) {
-    if (selected.includes(name) || name === 'stable' || name === 'experimental') {
+    if (selected.includes(name) || name === 'main' || name === 'development') {
       continue
     }
 
@@ -98,9 +98,9 @@ function selectBranches (info, now, windowDays) {
 
     const date = new Date(dates[name]).getTime()
     const recent = date >= cutoff
-    const aheadOfExperimental = expDate !== null && date > expDate
+    const aheadOfDevelopment = developmentDate !== null && date > developmentDate
 
-    if (recent || aheadOfExperimental) {
+    if (recent || aheadOfDevelopment) {
       selected.push(name)
     }
   }
@@ -111,7 +111,7 @@ function selectBranches (info, now, windowDays) {
 /**
  * Discovers which branches of a repository should be built.
  *
- * Fetches commit dates only for experimental and "other" branches (stable/default
+ * Fetches commit dates only for development and "other" branches (main/default
  * are decided without a date), then applies selectBranches. Any API failure resolves
  * to an empty list so the caller can skip the repo without aborting the run.
  *
@@ -131,11 +131,11 @@ async function discoverBranches (owner, repo, options, token, now) {
 
     // Only the branches whose dates actually influence the decision need a lookup
     const needDates = new Set()
-    if (names.includes('experimental')) {
-      needDates.add('experimental')
+    if (names.includes('development')) {
+      needDates.add('development')
     }
     for (const name of names) {
-      if (name !== 'stable' && name !== 'experimental' && name !== defaultBranch) {
+      if (name !== 'main' && name !== 'development' && name !== defaultBranch) {
         needDates.add(name)
       }
     }

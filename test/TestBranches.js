@@ -15,14 +15,14 @@ describe("Branch Selection Rule", () => {
         assert.deepStrictEqual(result, ["main"]);
     });
 
-    it("lists stable, experimental and the default branch", () => {
-        const result = selectBranches({defaultBranch: "main", branches: ["main", "stable", "experimental"], dates: {}}, NOW, 30);
-        assert.deepStrictEqual(result, ["stable", "experimental", "main"]);
+    it("lists main, development and the default branch", () => {
+        const result = selectBranches({defaultBranch: "legacy", branches: ["legacy", "main", "development"], dates: {}}, NOW, 30);
+        assert.deepStrictEqual(result, ["main", "development", "legacy"]);
     });
 
-    it("does not duplicate the default branch when it is stable", () => {
-        const result = selectBranches({defaultBranch: "stable", branches: ["stable", "experimental"], dates: {}}, NOW, 30);
-        assert.deepStrictEqual(result, ["stable", "experimental"]);
+    it("does not duplicate the default branch when it is main", () => {
+        const result = selectBranches({defaultBranch: "main", branches: ["main", "development"], dates: {}}, NOW, 30);
+        assert.deepStrictEqual(result, ["main", "development"]);
     });
 
     it("includes a recently-committed other branch", () => {
@@ -30,27 +30,27 @@ describe("Branch Selection Rule", () => {
         assert.include(result, "feature");
     });
 
-    it("excludes a stale other branch (no experimental to be ahead of)", () => {
+    it("excludes a stale other branch (no development to be ahead of)", () => {
         const result = selectBranches({defaultBranch: "main", branches: ["main", "feature"], dates: {feature: iso(200)}}, NOW, 30);
         assert.notInclude(result, "feature");
     });
 
-    it("includes an other branch newer than experimental even if outside the window", () => {
+    it("includes an other branch newer than development even if outside the window", () => {
         const info = {
             defaultBranch: "main",
-            branches: ["main", "stable", "experimental", "feature"],
-            // experimental committed 90d ago; feature 60d ago -> stale, but ahead of experimental
-            dates: {experimental: iso(90), feature: iso(60)}
+            branches: ["main", "development", "feature"],
+            // development committed 90d ago; feature 60d ago -> stale, but ahead of development
+            dates: {development: iso(90), feature: iso(60)}
         };
         const result = selectBranches(info, NOW, 30);
         assert.include(result, "feature");
     });
 
-    it("excludes an other branch older than both window and experimental", () => {
+    it("excludes an other branch older than both window and development", () => {
         const info = {
             defaultBranch: "main",
-            branches: ["main", "experimental", "old"],
-            dates: {experimental: iso(90), old: iso(200)}
+            branches: ["main", "development", "old"],
+            dates: {development: iso(90), old: iso(200)}
         };
         const result = selectBranches(info, NOW, 30);
         assert.notInclude(result, "old");
@@ -61,11 +61,11 @@ describe("Branch Discovery (stubbed API)", () => {
     const originalLoad = Module._load;
     let discoverBranches;
 
-    const branchNames = ["main", "stable", "experimental", "feature-recent", "feature-ahead", "feature-old"];
+    const branchNames = ["main", "development", "feature-recent", "feature-ahead", "feature-old"];
     const dates = {
-        experimental: iso(86),       // outside 30d window
+        development: iso(86),        // outside 30d window
         "feature-recent": iso(6),    // recent -> include
-        "feature-ahead": iso(56),    // stale but newer than experimental -> include
+        "feature-ahead": iso(56),    // stale but newer than development -> include
         "feature-old": iso(117)      // older than both -> exclude
     };
 
@@ -96,8 +96,8 @@ describe("Branch Discovery (stubbed API)", () => {
         delete require.cache[require.resolve("../src/branches.js")];
     });
 
-    it("discovers default + stable + experimental + qualifying branches", async () => {
+    it("discovers default + main + development + qualifying branches", async () => {
         const result = await discoverBranches("o", "r", {}, "token", NOW);
-        assert.deepStrictEqual(result, ["stable", "experimental", "main", "feature-recent", "feature-ahead"]);
+        assert.deepStrictEqual(result, ["main", "development", "feature-recent", "feature-ahead"]);
     });
 });

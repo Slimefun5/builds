@@ -53,16 +53,17 @@ function writeIndex (jobs, logging) {
 }
 
 /**
- * Derives a build-name prefix for a branch. stable/experimental keep their
- * conventional labels; any other branch uses an explicit fallback or its own name.
+ * Derives a build-name prefix for a branch. main/development keep the STABLE/EXP
+ * labels the published jars have always carried, so the branch rename does not
+ * change any version string; any other branch uses an explicit fallback or its own name.
  *
  * @param  {String} branch    The branch name
  * @param  {String} fallback  An optional configured prefix
  * @return {String}           The prefix to use
  */
 function prefixFor (branch, fallback) {
-  if (branch === 'stable') return 'STABLE'
-  if (branch === 'experimental') return 'EXP'
+  if (branch === 'main') return 'STABLE'
+  if (branch === 'development') return 'EXP'
   return fallback || branch.toUpperCase()
 }
 

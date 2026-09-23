@@ -7,12 +7,12 @@ const {assert} = chai;
 const releases = [
     {
         tag_name: "v2",
-        target_commitish: "experimental",
+        target_commitish: "development",
         assets: [{name: "X-EXP.jar", browser_download_url: "http://x/exp.jar"}]
     },
     {
         tag_name: "v1",
-        target_commitish: "stable",
+        target_commitish: "main",
         assets: [
             {name: "X.jar", browser_download_url: "http://x/stable.jar"},
             {name: "X-sources.jar", browser_download_url: "http://x/sources.jar"}
@@ -53,14 +53,14 @@ describe("Release Jar Resolver", () => {
     });
 
     it("resolves the release targeting the branch, with its commit SHA", async () => {
-        const result = await findReleaseJar("o", "r", "stable", "token");
+        const result = await findReleaseJar("o", "r", "main", "token");
         assert.strictEqual(result.jarUrl, "http://x/stable.jar");
         assert.strictEqual(result.tag, "v1");
         assert.strictEqual(result.sha, "sha-stable-commit");
     });
 
     it("resolves a different branch independently", async () => {
-        const result = await findReleaseJar("o", "r", "experimental", "token");
+        const result = await findReleaseJar("o", "r", "development", "token");
         assert.strictEqual(result.jarUrl, "http://x/exp.jar");
         assert.strictEqual(result.sha, "sha-exp-commit");
     });
@@ -71,7 +71,7 @@ describe("Release Jar Resolver", () => {
     });
 
     it("ignores -sources.jar assets", async () => {
-        const result = await findReleaseJar("o", "r", "stable", "token");
+        const result = await findReleaseJar("o", "r", "main", "token");
         assert.notStrictEqual(result.jarUrl, "http://x/sources.jar");
     });
 });

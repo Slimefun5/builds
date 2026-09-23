@@ -17,13 +17,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/ChestTerminal/stable",
+        "branch": "main",
+        "directory": "Slimefun5/ChestTerminal/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/ChestTerminal/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/ChestTerminal/development",
         "prefix": "EXP"
       }
     ]
@@ -34,13 +34,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/DynaTech/stable",
+        "branch": "main",
+        "directory": "Slimefun5/DynaTech/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/DynaTech/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/DynaTech/development",
         "prefix": "EXP"
       }
     ]
@@ -51,13 +51,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/ExoticGarden/stable",
+        "branch": "main",
+        "directory": "Slimefun5/ExoticGarden/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/ExoticGarden/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/ExoticGarden/development",
         "prefix": "EXP"
       }
     ]
@@ -68,13 +68,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/ExtraGear/stable",
+        "branch": "main",
+        "directory": "Slimefun5/ExtraGear/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/ExtraGear/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/ExtraGear/development",
         "prefix": "EXP"
       }
     ]
@@ -85,13 +85,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/FastMachines/stable",
+        "branch": "main",
+        "directory": "Slimefun5/FastMachines/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/FastMachines/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/FastMachines/development",
         "prefix": "EXP"
       }
     ]
@@ -102,13 +102,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/FluffyMachines/stable",
+        "branch": "main",
+        "directory": "Slimefun5/FluffyMachines/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/FluffyMachines/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/FluffyMachines/development",
         "prefix": "EXP"
       }
     ]
@@ -119,13 +119,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/FoxyMachines/stable",
+        "branch": "main",
+        "directory": "Slimefun5/FoxyMachines/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/FoxyMachines/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/FoxyMachines/development",
         "prefix": "EXP"
       }
     ]
@@ -136,13 +136,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/Galactifun/stable",
+        "branch": "main",
+        "directory": "Slimefun5/Galactifun/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/Galactifun/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/Galactifun/development",
         "prefix": "EXP"
       }
     ]
@@ -153,13 +153,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/GeneticChickengineering/stable",
+        "branch": "main",
+        "directory": "Slimefun5/GeneticChickengineering/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/GeneticChickengineering/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/GeneticChickengineering/development",
         "prefix": "EXP"
       }
     ]
@@ -170,13 +170,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/InfinityExpansion/stable",
+        "branch": "main",
+        "directory": "Slimefun5/InfinityExpansion/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/InfinityExpansion/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/InfinityExpansion/development",
         "prefix": "EXP"
       }
     ]
@@ -187,13 +187,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/InfinityLib/stable",
+        "branch": "main",
+        "directory": "Slimefun5/InfinityLib/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/InfinityLib/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/InfinityLib/development",
         "prefix": "EXP"
       }
     ]
@@ -204,13 +204,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/LiteXpansion/stable",
+        "branch": "main",
+        "directory": "Slimefun5/LiteXpansion/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/LiteXpansion/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/LiteXpansion/development",
         "prefix": "EXP"
       }
     ]
@@ -221,13 +221,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/LuckyBlocks/stable",
+        "branch": "main",
+        "directory": "Slimefun5/LuckyBlocks/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/LuckyBlocks/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/LuckyBlocks/development",
         "prefix": "EXP"
       }
     ]
@@ -238,13 +238,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/MissileWarfare/stable",
+        "branch": "main",
+        "directory": "Slimefun5/MissileWarfare/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/MissileWarfare/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/MissileWarfare/development",
         "prefix": "EXP"
       }
     ]
@@ -255,13 +255,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/Networks/stable",
+        "branch": "main",
+        "directory": "Slimefun5/Networks/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/Networks/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/Networks/development",
         "prefix": "EXP"
       }
     ]
@@ -272,13 +272,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/SMG/stable",
+        "branch": "main",
+        "directory": "Slimefun5/SMG/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/SMG/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/SMG/development",
         "prefix": "EXP"
       }
     ]
@@ -289,13 +289,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/SensibleToolbox/stable",
+        "branch": "main",
+        "directory": "Slimefun5/SensibleToolbox/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/SensibleToolbox/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/SensibleToolbox/development",
         "prefix": "EXP"
       }
     ]
@@ -306,13 +306,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/SimpleUtils/stable",
+        "branch": "main",
+        "directory": "Slimefun5/SimpleUtils/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/SimpleUtils/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/SimpleUtils/development",
         "prefix": "EXP"
       }
     ]
@@ -323,13 +323,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/SlimeTinker/stable",
+        "branch": "main",
+        "directory": "Slimefun5/SlimeTinker/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/SlimeTinker/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/SlimeTinker/development",
         "prefix": "EXP"
       }
     ]
@@ -340,13 +340,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/Slimefun5/stable",
+        "branch": "main",
+        "directory": "Slimefun5/Slimefun5/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/Slimefun5/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/Slimefun5/development",
         "prefix": "EXP"
       }
     ]
@@ -357,13 +357,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/SlimefunAdvancements/stable",
+        "branch": "main",
+        "directory": "Slimefun5/SlimefunAdvancements/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/SlimefunAdvancements/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/SlimefunAdvancements/development",
         "prefix": "EXP"
       }
     ]
@@ -386,13 +386,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/SoulJars/stable",
+        "branch": "main",
+        "directory": "Slimefun5/SoulJars/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/SoulJars/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/SoulJars/development",
         "prefix": "EXP"
       }
     ]
@@ -403,13 +403,13 @@
     "abandoned": false,
     "branches": [
       {
-        "branch": "stable",
-        "directory": "Slimefun5/Supreme/stable",
+        "branch": "main",
+        "directory": "Slimefun5/Supreme/main",
         "prefix": "STABLE"
       },
       {
-        "branch": "experimental",
-        "directory": "Slimefun5/Supreme/experimental",
+        "branch": "development",
+        "directory": "Slimefun5/Supreme/development",
         "prefix": "EXP"
       }
     ]

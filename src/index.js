@@ -27,9 +27,9 @@ function sortPlugins(a, b) {
     }
 }
 
-// stable first, then experimental, then any other branch alphabetically
+// main first, then development, then any other branch alphabetically
 function sortBranches(a, b) {
-    let order = {stable: 0, experimental: 1};
+    let order = {main: 0, development: 1};
     let weightA = order[a.branch] !== undefined ? order[a.branch] : 2;
     let weightB = order[b.branch] !== undefined ? order[b.branch] : 2;
 

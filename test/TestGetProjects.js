@@ -14,11 +14,11 @@ describe("getProjects branch expansion", () => {
         FileSystem.promises.readFile = () => Promise.resolve(JSON.stringify({
             "Slimefun5/DynaTech": {options: {}},
             "Other/Addon": {options: {abandoned: true}},
-            "Legacy/Repo:stable": {options: {prefix: "STABLE"}}
+            "Legacy/Repo:main": {options: {prefix: "STABLE"}}
         }));
 
         branches.discoverBranches = async (owner, repo) => {
-            if (repo === "DynaTech") return ["stable", "experimental", "main"];
+            if (repo === "DynaTech") return ["main", "development", "legacy"];
             if (repo === "Addon") return ["master"];
             return [];
         };
@@ -32,9 +32,9 @@ describe("getProjects branch expansion", () => {
     it("expands repo-level entries into one job per discovered branch", async () => {
         const jobs = await projects.getProjects(false);
         const ids = jobs.map(job => `${job.author}/${job.repo}:${job.branch}`);
-        assert.include(ids, "Slimefun5/DynaTech:stable");
-        assert.include(ids, "Slimefun5/DynaTech:experimental");
         assert.include(ids, "Slimefun5/DynaTech:main");
+        assert.include(ids, "Slimefun5/DynaTech:development");
+        assert.include(ids, "Slimefun5/DynaTech:legacy");
         assert.include(ids, "Other/Addon:master");
     });
 
@@ -42,7 +42,7 @@ describe("getProjects branch expansion", () => {
         const jobs = await projects.getProjects(false);
         const legacy = jobs.filter(job => job.repo === "Repo");
         assert.strictEqual(legacy.length, 1);
-        assert.strictEqual(legacy[0].branch, "stable");
+        assert.strictEqual(legacy[0].branch, "main");
         assert.strictEqual(legacy[0].options.prefix, "STABLE");
     });
 
@@ -50,11 +50,11 @@ describe("getProjects branch expansion", () => {
         const jobs = await projects.getProjects(false);
 
         const main = jobs.find(job => job.repo === "DynaTech" && job.branch === "main");
-        assert.strictEqual(main.options.prefix, "MAIN");
+        assert.strictEqual(main.options.prefix, "STABLE");
         assert.strictEqual(main.directory, "Slimefun5/DynaTech/main");
 
-        const experimental = jobs.find(job => job.repo === "DynaTech" && job.branch === "experimental");
-        assert.strictEqual(experimental.options.prefix, "EXP");
+        const development = jobs.find(job => job.repo === "DynaTech" && job.branch === "development");
+        assert.strictEqual(development.options.prefix, "EXP");
 
         const addon = jobs.find(job => job.repo === "Addon");
         assert.strictEqual(addon.options.prefix, "MASTER");
