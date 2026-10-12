@@ -1,0 +1,97 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/Slimefun5
+Download completed for dependency Slimefun5/Slimefun5
+
+> Task :compileJava FAILED
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/HelpCommand.java:13: error: cannot find symbol
+import io.github.thebusybiscuit.slimefun5.core.services.localization.AddonMessageService;
+                                                                    ^
+  symbol:   class AddonMessageService
+  location: package io.github.thebusybiscuit.slimefun5.core.services.localization
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/HelpCommand.java:48: error: cannot find symbol
+    private static String resolveDescription(AddonMessageService messages, @Nullable Player viewer, JavaPlugin addon, SubCommand sub) {
+                                             ^
+  symbol:   class AddonMessageService
+  location: class io.github.mooy1.infinitylib.commands.HelpCommand
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/InfoCommand.java:11: error: cannot find symbol
+import io.github.thebusybiscuit.slimefun5.core.services.localization.AddonMessageService;
+                                                                    ^
+  symbol:   class AddonMessageService
+  location: package io.github.thebusybiscuit.slimefun5.core.services.localization
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/core/AbstractAddon.java:152: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/core/AbstractAddon.java:153: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this, "infinitylib.yml");
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/HelpCommand.java:29: error: cannot find symbol
+        AddonMessageService messages = Slimefun.getAddonMessageService();
+        ^
+  symbol:   class AddonMessageService
+  location: class io.github.mooy1.infinitylib.commands.HelpCommand
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/HelpCommand.java:29: error: cannot find symbol
+        AddonMessageService messages = Slimefun.getAddonMessageService();
+                                               ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/InfoCommand.java:29: error: cannot find symbol
+        AddonMessageService messages = Slimefun.getAddonMessageService();
+        ^
+  symbol:   class AddonMessageService
+  location: class io.github.mooy1.infinitylib.commands.InfoCommand
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/InfoCommand.java:29: error: cannot find symbol
+        AddonMessageService messages = Slimefun.getAddonMessageService();
+                                               ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/AliasesCommand.java:29: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(sender, plugin, "commands.aliases.message",
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/machines/CraftingBlock.java:58: error: cannot find symbol
+                    Slimefun.getAddonMessageService().sendMessage(p, getAddon().getJavaPlugin(), "crafting.success",
+                            ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/machines/CraftingBlock.java:61: error: cannot find symbol
+                    Slimefun.getAddonMessageService().sendMessage(p, getAddon().getJavaPlugin(), "crafting.no-room", "&6Not Enough Room!");
+                            ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/machines/CraftingBlock.java:65: error: cannot find symbol
+            Slimefun.getAddonMessageService().sendMessage(p, getAddon().getJavaPlugin(), "crafting.invalid-recipe", "&cInvalid Recipe!");
+                    ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+13 errors
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/InfinityLib/development/files/src/main/java/io/github/mooy1/infinitylib/commands/HelpCommand.java:13: error: cannot find symbol
+  import io.github.thebusybiscuit.slimefun5.core.services.localization.AddonMessageService;
+                                                                      ^
+    symbol:   class AddonMessageService
+    location: package io.github.thebusybiscuit.slimefun5.core.services.localization
+  13 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 13s
+1 actionable task: 1 executed
