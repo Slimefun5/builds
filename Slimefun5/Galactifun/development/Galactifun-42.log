@@ -1,0 +1,63 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/SlimefunMetrics
+Download completed for dependency Slimefun5/SlimefunMetrics
+Downloading dependency from Slimefun5/InfinityLib
+Download completed for dependency Slimefun5/InfinityLib
+
+> Task :compileJava
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+/home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/src/main/java/io/github/addoncommunity/galactifun/Galactifun.java:148: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class Slimefun
+        return Slimefun.getAddonMessageService().getMessage(player, Galactifun.instance(), key, english);
+                       ^
+  symbol:   method getAddonMessageService()
+  location: class Slimefun
+/home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/src/main/java/io/github/addoncommunity/galactifun/util/Messages.java:35: error: cannot find symbol
+        return Slimefun.getAddonMessageService().getMessages(player, Galactifun.instance(), key, english);
+                       ^
+  symbol:   method getAddonMessageService()
+  location: class Slimefun
+/home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/src/main/java/io/github/addoncommunity/galactifun/util/Messages.java:39: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, Galactifun.instance(), key, english);
+                ^/home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/src/main/java/io/github/addoncommunity/galactifun/util/Messages.java:30: error: cannot find symbol
+
+  symbol:   method getAddonMessageService()
+  location: class Slimefun
+/home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/src/main/java/io/github/addoncommunity/galactifun/util/Messages.java:47: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, Galactifun.instance(), key, english,
+                ^
+  symbol:   method getAddonMessageService()
+  location: class Slimefun
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/src/main/java/io/github/addoncommunity/galactifun/Galactifun.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors
+3 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/Galactifun/development/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  warning: [options] source value 8 is obsolete and will be removed in a future release
+  5 errors
+  3 warnings
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 27s
+1 actionable task: 1 executed
