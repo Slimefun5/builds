@@ -1,0 +1,40 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :compileJava
+
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/development/files/src/main/java/me/kaiyan/missilewarfare/util/Messages.java:118: error: cannot find symbol
+        return Slimefun.getAddonMessageService().getMessage(viewer, MissileWarfare.getInstance(), key, english);
+                       ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/MissileWarfare/development/files/src/main/java/me/kaiyan/missilewarfare/MissileWarfare.java:140: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/MissileWarfare/development/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/MissileWarfare/development/files/src/main/java/me/kaiyan/missilewarfare/util/Messages.java:118: error: cannot find symbol
+          return Slimefun.getAddonMessageService().getMessage(viewer, MissileWarfare.getInstance(), key, english);
+                         ^
+    symbol:   method getAddonMessageService()
+    location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+  2 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 15s
+1 actionable task: 1 executed
