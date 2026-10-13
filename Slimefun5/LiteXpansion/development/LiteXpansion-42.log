@@ -1,0 +1,50 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava FAILED
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/src/main/java/dev/j3fftw/litexpansion/LiteXpansion.java:71: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/src/main/java/dev/j3fftw/litexpansion/utils/Messages.java:29: error: cannot find symbol
+        return Slimefun.getAddonMessageService().getMessage(player, LiteXpansion.getInstance(), key, english);
+                       ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/src/main/java/dev/j3fftw/litexpansion/utils/Messages.java:39: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, LiteXpansion.getInstance(), key, english);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/src/main/java/dev/j3fftw/litexpansion/utils/Messages.java:48: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, LiteXpansion.getInstance(), key, english,
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/src/main/java/dev/j3fftw/litexpansion/utils/Reflections.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/src/main/java/dev/j3fftw/litexpansion/LiteXpansion.java:71: error: cannot find symbol
+          Slimefun.getAddonMessageService().registerTranslations(this);
+                  ^
+    symbol:   method getAddonMessageService()
+    location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+  4 errors
+
+* Try:
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/LiteXpansion/development/files/build/reports/problems/problems-report.html
+
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 14s
+1 actionable task: 1 executed
