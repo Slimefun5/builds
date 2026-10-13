@@ -1,0 +1,58 @@
+Downloading https://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.3.1!
+
+Here are the highlights of this release:
+ - Test reporting improvements
+ - Error and warning improvements
+ - Build authoring improvements
+
+For more details see https://docs.gradle.org/9.3.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/Slimefun5
+Download completed for dependency Slimefun5/Slimefun5
+Downloading dependency from Slimefun5/InfinityExpansion
+Download completed for dependency Slimefun5/InfinityExpansion
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/FastMachines/development/files/src/main/java/net/guizhanss/fastmachines/FastMachines.java:71: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/FastMachines/development/files/src/main/java/net/guizhanss/fastmachines/util/Messages.java:68: error: cannot find symbol
+        return Slimefun.getAddonMessageService().getMessage(viewer, FastMachines.getInstance(), key, english);
+                       ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+Note: /home/runner/work/builds/builds/Slimefun5/FastMachines/development/files/src/main/java/net/guizhanss/fastmachines/core/services/LocalizationService.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/FastMachines/development/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/FastMachines/development/files/src/main/java/net/guizhanss/fastmachines/FastMachines.java:71: error: cannot find symbol
+          Slimefun.getAddonMessageService().registerTranslations(this);
+                  ^
+    symbol:   method getAddonMessageService()
+    location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+  2 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 55s
+1 actionable task: 1 executed
