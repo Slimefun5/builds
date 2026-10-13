@@ -1,0 +1,59 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/AdvancementAPI
+Download completed for dependency Slimefun5/AdvancementAPI
+
+> Task :compileJava
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:77: error: cannot find symbol
+        Slimefun.getAddonMessageService().registerTranslations(this);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/util/Messages.java:29: error: cannot find symbol
+        return Slimefun.getAddonMessageService().getMessage(player, SFAdvancements.instance(), key, english);
+                       ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/util/Messages.java:33: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, SFAdvancements.instance(), key, english);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/util/Messages.java:38: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, SFAdvancements.instance(), key, english, placeholders);
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+/home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/util/Messages.java:47: error: cannot find symbol
+        Slimefun.getAddonMessageService().sendMessage(recipient, SFAdvancements.instance(), key, english,
+                ^
+  symbol:   method getAddonMessageService()
+  location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+Note: /home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/core/command/DumpItemCommand.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+5 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/builds/builds/Slimefun5/SlimefunAdvancements/development/files/src/main/java/me/char321/sfadvancements/SFAdvancements.java:77: error: cannot find symbol
+          Slimefun.getAddonMessageService().registerTranslations(this);
+                  ^
+    symbol:   method getAddonMessageService()
+    location: class io.github.thebusybiscuit.slimefun5.implementation.Slimefun
+  5 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 17s
+1 actionable task: 1 executed
