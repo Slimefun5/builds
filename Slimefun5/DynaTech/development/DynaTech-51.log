@@ -1,0 +1,41 @@
+Downloading https://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.3.1!
+
+Here are the highlights of this release:
+ - Test reporting improvements
+ - Error and warning improvements
+ - Build authoring improvements
+
+For more details see https://docs.gradle.org/9.3.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Downloading dependency from Slimefun5/SlimefunMetrics
+Download completed for dependency Slimefun5/SlimefunMetrics
+Downloading dependency from Slimefun5/Slimefun5
+Download completed for dependency Slimefun5/Slimefun5
+Downloading dependency from Slimefun5/ExoticGarden
+Download completed for dependency Slimefun5/ExoticGarden
+Downloading dependency from Slimefun5/InfinityExpansion
+Download completed for dependency Slimefun5/InfinityExpansion
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'DynaTech'.
+> Failed to calculate the value of task ':compileJava' property 'javaCompiler'.
+   > Cannot find a Java installation on your machine (Linux 7.0.0-1017-azure amd64) matching: {languageVersion=8, vendor=any vendor, implementation=vendor-specific, nativeImageCapable=false}. Toolchain download repositories have not been configured.
+
+* Try:
+> Learn more about toolchain auto-detection and auto-provisioning at https://docs.gradle.org/9.3.1/userguide/toolchains.html#sec:auto_detection.
+> Learn more about toolchain repositories at https://docs.gradle.org/9.3.1/userguide/toolchains.html#sub:download_repositories.
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 35s
