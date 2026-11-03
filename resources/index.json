@@ -8,6 +8,11 @@
         "branch": "main",
         "directory": "Slimefun5/AdvancementAPI/main",
         "prefix": "STABLE"
+      },
+      {
+        "branch": "development",
+        "directory": "Slimefun5/AdvancementAPI/development",
+        "prefix": "EXP"
       }
     ]
   },
